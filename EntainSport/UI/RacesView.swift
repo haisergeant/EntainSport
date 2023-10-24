@@ -8,17 +8,11 @@
 import SwiftUI
 import Combine
 
-struct RaceViewModel {
-    let imageName: String
-    let title: String
-    let time: TimeInterval
-}
-
 class RacesViewModel: ObservableObject {
     private let service: Service
     
     @Published var summaries = [RaceSummary]()
-    @Published var viewModels = [RaceViewModel]()
+    @Published var viewModels = [RaceItemViewModel]()
     @Published var filterModels = [SelectableButtonViewModel]()
     
     @Published var selectedGreyhound = true
@@ -68,9 +62,11 @@ class RacesViewModel: ObservableObject {
             item.category == .horse && horse
         }
         .compactMap {
-            RaceViewModel(imageName: $0.category.imageName,
-                          title: $0.raceName,
-                          time: $0.advertisedStart)
+            RaceItemViewModel(imageName: $0.category.imageName,
+                              meetingName: $0.meetingName,
+                              raceName: $0.raceName,
+                              raceNumber: "No \n\($0.raceNumber)",
+                              time: $0.advertisedStart)
         }
     }
     
@@ -80,8 +76,8 @@ class RacesViewModel: ObservableObject {
             await MainActor.run {
                 switch result {
                 case .success(let raceResponse):
-                    summaries = raceResponse.raceSummaries
-                    configureDataWithFilters(greyhound: selectedGreyhound, 
+                    summaries = raceResponse.raceSummaries.sorted { $0.advertisedStart < $1.advertisedStart }
+                    configureDataWithFilters(greyhound: selectedGreyhound,
                                              harness: selectedHarness,
                                              horse: selectedHorse)
                 case .failure(let error):
@@ -96,29 +92,26 @@ struct RacesView: View {
     @ObservedObject var viewModel: RacesViewModel
     
     var body: some View {
-        
-        HStack {
-            ForEach(viewModel.filterModels, id: \.title) { item in
-                SelectableButton(viewModel: item)                    
-                    .frame(maxWidth: .infinity)
-            }
-        }
-        
-        List(viewModel.viewModels, id: \.title) { item in
+        VStack(spacing: 0) {
             HStack {
-                Image(item.imageName)
-                    .renderingMode(.template)
-                    .resizable()
-                    .padding(4)
-                    .scaledToFit()
-                    .frame(width: 40, height: 40)
-                Text(item.title)
-                Spacer()
-                Text(String(item.time))
+                ForEach(viewModel.filterModels, id: \.title) { item in
+                    SelectableButton(viewModel: item)
+                        .frame(maxWidth: .infinity)
+                }
             }
+            .padding(.bottom, 10)
             
+            List {
+                ForEach(0..<viewModel.viewModels.count, id: \.self) { item in
+                    RaceItemView(viewModel: viewModel.viewModels[item])
+                        .background(item % 2 == 0 ? .main : .secondary1)
+                        .listRowInsets(EdgeInsets())
+                        .listRowSeparator(.hidden)
+                }
+            }
+            .listStyle(.plain)
         }
-        .listStyle(.plain)
+        .background(.secondary1)
     }
 }
 

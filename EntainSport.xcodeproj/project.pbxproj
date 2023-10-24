@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E201BF482AE7CBF5005F6ABD /* RaceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E201BF472AE7CBF5005F6ABD /* RaceItemView.swift */; };
+		E201BF4A2AE7D4C0005F6ABD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E201BF492AE7D4C0005F6ABD /* Theme.swift */; };
+		E201BF4C2AE7D9E1005F6ABD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E201BF4B2AE7D9E1005F6ABD /* Colors.xcassets */; };
+		E201BF4E2AE7EA2D005F6ABD /* VerticalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E201BF4D2AE7EA2D005F6ABD /* VerticalSeparator.swift */; };
 		E2AE4BD02AE53EF400AF7A88 /* EntainSportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE4BCF2AE53EF400AF7A88 /* EntainSportApp.swift */; };
 		E2AE4BD42AE53EF500AF7A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2AE4BD32AE53EF500AF7A88 /* Assets.xcassets */; };
 		E2AE4BD82AE53EF500AF7A88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2AE4BD72AE53EF500AF7A88 /* Preview Assets.xcassets */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E201BF472AE7CBF5005F6ABD /* RaceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceItemView.swift; sourceTree = "<group>"; };
+		E201BF492AE7D4C0005F6ABD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E201BF4B2AE7D9E1005F6ABD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E201BF4D2AE7EA2D005F6ABD /* VerticalSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalSeparator.swift; sourceTree = "<group>"; };
 		E2AE4BCC2AE53EF400AF7A88 /* EntainSport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EntainSport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AE4BCF2AE53EF400AF7A88 /* EntainSportApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntainSportApp.swift; sourceTree = "<group>"; };
 		E2AE4BD32AE53EF500AF7A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,9 +118,11 @@
 			isa = PBXGroup;
 			children = (
 				E2AE4BCF2AE53EF400AF7A88 /* EntainSportApp.swift */,
+				E201BF492AE7D4C0005F6ABD /* Theme.swift */,
 				E2AE4C032AE616BB00AF7A88 /* UI */,
 				E2AE4BFA2AE5DD3C00AF7A88 /* Data */,
 				E2AE4BD32AE53EF500AF7A88 /* Assets.xcassets */,
+				E201BF4B2AE7D9E1005F6ABD /* Colors.xcassets */,
 				E2AE4BD52AE53EF500AF7A88 /* EntainSport.entitlements */,
 				E2AE4BD62AE53EF500AF7A88 /* Preview Content */,
 			);
@@ -162,6 +172,8 @@
 			children = (
 				E2AE4C042AE616CA00AF7A88 /* RacesView.swift */,
 				E2AE4C0C2AE69C2800AF7A88 /* SelectableButton.swift */,
+				E201BF472AE7CBF5005F6ABD /* RaceItemView.swift */,
+				E201BF4D2AE7EA2D005F6ABD /* VerticalSeparator.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -271,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2AE4BD82AE53EF500AF7A88 /* Preview Assets.xcassets in Resources */,
+				E201BF4C2AE7D9E1005F6ABD /* Colors.xcassets in Resources */,
 				E2AE4BD42AE53EF500AF7A88 /* Assets.xcassets in Resources */,
 				E2AE4C092AE618C100AF7A88 /* racing.json in Resources */,
 			);
@@ -298,11 +311,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2AE4C0B2AE6234400AF7A88 /* SharedConvenienceFunctions.swift in Sources */,
+				E201BF482AE7CBF5005F6ABD /* RaceItemView.swift in Sources */,
 				E2AE4C0D2AE69C2800AF7A88 /* SelectableButton.swift in Sources */,
 				E2AE4BFE2AE5DD7A00AF7A88 /* APIRepository.swift in Sources */,
 				E2AE4C022AE5E12800AF7A88 /* RaceResponse.swift in Sources */,
 				E2AE4C002AE5E11200AF7A88 /* EndPoint.swift in Sources */,
+				E201BF4E2AE7EA2D005F6ABD /* VerticalSeparator.swift in Sources */,
 				E2AE4C052AE616CA00AF7A88 /* RacesView.swift in Sources */,
+				E201BF4A2AE7D4C0005F6ABD /* Theme.swift in Sources */,
 				E2AE4BD02AE53EF400AF7A88 /* EntainSportApp.swift in Sources */,
 				E2AE4BFC2AE5DD6400AF7A88 /* Repository.swift in Sources */,
 			);
