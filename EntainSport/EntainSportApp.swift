@@ -11,7 +11,7 @@ import SwiftUI
 struct EntainSportApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RacesView(viewModel: RacesViewModel(service: APIRepository()))
         }
     }
 }

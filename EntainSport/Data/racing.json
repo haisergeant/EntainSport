@@ -1,0 +1,417 @@
+{
+  "status": 200,
+  "data": {
+    "next_to_go_ids": [
+      "2076f5a8-3da1-4484-ac5d-b0961499ba76",
+      "5e0d6d24-e9be-40d3-b514-11661cb5e790",
+      "f544601b-0a56-40c2-a299-1d2a800c5c7b",
+      "ef86ebfc-b656-438c-bd22-a4febb705d18",
+      "4dd01186-c3e6-42eb-97c7-d25c23640a5e",
+      "4317b9fb-d20b-4784-8a19-eed4ac1b420f",
+      "511d16be-0d1a-4679-b88c-deb7428e295f",
+      "35d951db-31dc-48fd-8c25-ef1fef1181c8",
+      "f3ded492-b3f8-46b2-8a48-0c0b07472e0e",
+      "f7b67124-a023-44be-9ec8-af061d64ce93"
+    ],
+    "race_summaries": {
+      "2076f5a8-3da1-4484-ac5d-b0961499ba76": {
+        "race_id": "2076f5a8-3da1-4484-ac5d-b0961499ba76",
+        "race_name": "Sri Lanka, The Wonder Of Asia Ebf Restricted Novice Stakes (Gbb Race)",
+        "race_number": 2,
+        "meeting_id": "e82f9bc5-3c7d-449e-8844-507012aa89b3",
+        "meeting_name": "Windsor",
+        "category_id": "4a2788f8-e825-4d36-9894-efd4baf1cfae",
+        "advertised_start": {
+          "seconds": 1698065700
+        },
+        "race_form": {
+          "distance": 1024,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "f1244c5f-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Heavy",
+            "short_name": "heavy"
+          },
+          "track_condition_id": "f1244c5f-a33d-11e7-810d-0a1a4ae29bd2",
+          "weather": {
+            "id": "5ba75165-3cec-11eb-88bb-36fbfdf5d97f",
+            "name": "OCAST",
+            "short_name": "ocast",
+            "icon_uri": "OCAST"
+          },
+          "weather_id": "5ba75165-3cec-11eb-88bb-36fbfdf5d97f",
+          "race_comment": "SOLAR ACLAIM (1) made a successful debut attempting this journey at Salisbury. Just denied at the same venue in latest and a bold bid is likely now dropping in distance. MRS THRUMP (2) was unplaced doing her best work late when delivering an eye-catching performance at Salisbury. Open to plenty of improvement second-up. Feared. CREMONE (4) was denied a clear run finishing eighth of eleven at Wolverhampton. Could fare better. PARK HILL SALLY (3) can only be watched after never threatening at huge odds tackling track and trip last month.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Windsor\",\"state\":\"UK\",\"country\":\"UK\",\"number\":2,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "SOLAR ACLAIM (1) made a successful debut attempting this journey at Salisbury. Just denied at the same venue in latest and a bold bid is likely now dropping in distance. MRS THRUMP (2) was unplaced doing her best work late when delivering an eye-catching performance at Salisbury. Open to plenty of improvement second-up. Feared. CREMONE (4) was denied a clear run finishing eighth of eleven at Wolverhampton. Could fare better. PARK HILL SALLY (3) can only be watched after never threatening at huge odds tackling track and trip last month."
+        },
+        "venue_id": "918cbbae-a70b-4a81-bcc2-ac3b31504c5c",
+        "venue_name": "Windsor",
+        "venue_state": "UK",
+        "venue_country": "UK"
+      },
+      "35d951db-31dc-48fd-8c25-ef1fef1181c8": {
+        "race_id": "35d951db-31dc-48fd-8c25-ef1fef1181c8",
+        "race_name": "Race 12",
+        "race_number": 12,
+        "meeting_id": "b48168a8-75b7-47f3-9ae1-44e1e3b405b7",
+        "meeting_name": "Towcester Bags",
+        "category_id": "9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+        "advertised_start": {
+          "seconds": 1698066420
+        },
+        "race_form": {
+          "distance": 270,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "race_comment": "SALACRES HILDA (6) is long overdue for a win, finishing in the minors at her last three starts, the latest jumping from this same trap when third in an A6 at this track (30.89). Rates on top in this line up. SALACRESFRANKLIN (1) stuck on well last time to finish 0.8 lengths back in second (16.56) at this track in a D4 over 270m. Deserves a win and gets her chance. GINANDTONIC (2) placed last time out so worth considering. LIMEKILN CHIC (5) wasn't far away at the finish when 4th and beaten only 1.75 lengths (16.65) at this track. Can do much better this time.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"\",\"state\":\"\",\"country\":\"\",\"number\":0,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "SALACRES HILDA (6) is long overdue for a win, finishing in the minors at her last three starts, the latest jumping from this same trap when third in an A6 at this track (30.89). Rates on top in this line up. SALACRESFRANKLIN (1) stuck on well last time to finish 0.8 lengths back in second (16.56) at this track in a D4 over 270m. Deserves a win and gets her chance. GINANDTONIC (2) placed last time out so worth considering. LIMEKILN CHIC (5) wasn't far away at the finish when 4th and beaten only 1.75 lengths (16.65) at this track. Can do much better this time."
+        },
+        "venue_id": "8d3bedc2-6367-4077-9f19-125440c71c47",
+        "venue_name": "Towcester Bags",
+        "venue_state": "UK",
+        "venue_country": "UK"
+      },
+      "4317b9fb-d20b-4784-8a19-eed4ac1b420f": {
+        "race_id": "4317b9fb-d20b-4784-8a19-eed4ac1b420f",
+        "race_name": "Monday 23Rd October 2023",
+        "race_number": 1,
+        "meeting_id": "2e7ac43d-3855-499e-a032-07566d385f1e",
+        "meeting_name": "Sheffield Bags",
+        "category_id": "9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+        "advertised_start": {
+          "seconds": 1698066240
+        },
+        "race_form": {
+          "distance": 500,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "weather": {
+            "id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+            "name": "FINE",
+            "short_name": "fine",
+            "icon_uri": "FINE"
+          },
+          "weather_id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+          "race_comment": "LEMMING PEPPER (5) followed a minor placing two runs ago with a plain effort last time to finish fourth, beaten 5 lengths, in an A4 at this track over 500m (29.80). Back in class and gets chance to fire. GEELO DOBBIE (4) wasn't far away at the finish when 4th and beaten only 3.5 lengths (30.20) at this track. The form out of the last run is proven to be strong. Cannot be left out. SULLIES GIRL (2) is down a grade after finishing fourth two starts back at this track then was again out of the placings at her latest appearance in an A4 at this track over 500m (30.38). Worth another chance this line-up. TRICKYS RUBYBLUE (6) can return to form after missing the top-three at this circuit last time out.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"\",\"state\":\"\",\"country\":\"\",\"number\":0,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "LEMMING PEPPER (5) followed a minor placing two runs ago with a plain effort last time to finish fourth, beaten 5 lengths, in an A4 at this track over 500m (29.80). Back in class and gets chance to fire. GEELO DOBBIE (4) wasn't far away at the finish when 4th and beaten only 3.5 lengths (30.20) at this track. The form out of the last run is proven to be strong. Cannot be left out. SULLIES GIRL (2) is down a grade after finishing fourth two starts back at this track then was again out of the placings at her latest appearance in an A4 at this track over 500m (30.38). Worth another chance this line-up. TRICKYS RUBYBLUE (6) can return to form after missing the top-three at this circuit last time out."
+        },
+        "venue_id": "764e58a3-a0d2-4b09-b6a4-db218606f7d5",
+        "venue_name": "Sheffield Bags",
+        "venue_state": "UK",
+        "venue_country": "UK"
+      },
+      "4dd01186-c3e6-42eb-97c7-d25c23640a5e": {
+        "race_id": "4dd01186-c3e6-42eb-97c7-d25c23640a5e",
+        "race_name": "Prix De L'hippodrome De La Crau",
+        "race_number": 6,
+        "meeting_id": "5bd519f9-e6d9-4877-a404-85e96ff2326a",
+        "meeting_name": "Marseille Borely",
+        "category_id": "4a2788f8-e825-4d36-9894-efd4baf1cfae",
+        "advertised_start": {
+          "seconds": 1698066000
+        },
+        "race_form": {
+          "distance": 1200,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "weather": {
+            "id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+            "name": "FINE",
+            "short_name": "fine",
+            "icon_uri": "FINE"
+          },
+          "weather_id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+          "race_comment": "TOUTELUSIVE (2) has been in solid form this year. Found the frame both runs since a victory at Vichy and rates a strong chance. FEEL THE FEVER (9) raced below her best in recent starts but could go well if bouncing back. STAR IS BORN (12) managed a fifth in September and can make the frame. HOLLY STORY (5) could be suited by a return to this distance.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Marseille Borely\",\"state\":\"FR\",\"country\":\"FR\",\"number\":6,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "TOUTELUSIVE (2) has been in solid form this year. Found the frame both runs since a victory at Vichy and rates a strong chance. FEEL THE FEVER (9) raced below her best in recent starts but could go well if bouncing back. STAR IS BORN (12) managed a fifth in September and can make the frame. HOLLY STORY (5) could be suited by a return to this distance."
+        },
+        "venue_id": "3db48b97-a6f2-48d6-9aec-ca95edf172d2",
+        "venue_name": "Marseille Borely",
+        "venue_state": "FR",
+        "venue_country": "FR"
+      },
+      "511d16be-0d1a-4679-b88c-deb7428e295f": {
+        "race_id": "511d16be-0d1a-4679-b88c-deb7428e295f",
+        "race_name": "Servotech Mr 71 Handicap",
+        "race_number": 5,
+        "meeting_id": "a048ae86-061e-4e1d-82a0-fd7e52292598",
+        "meeting_name": "Greyville",
+        "category_id": "4a2788f8-e825-4d36-9894-efd4baf1cfae",
+        "advertised_start": {
+          "seconds": 1698066300
+        },
+        "race_form": {
+          "distance": 1200,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "906cd562-a37c-11e7-a5c6-0ab32e6ac8d2",
+            "name": "Soft",
+            "short_name": "soft"
+          },
+          "track_condition_id": "906cd562-a37c-11e7-a5c6-0ab32e6ac8d2",
+          "weather": {
+            "id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+            "name": "FINE",
+            "short_name": "fine",
+            "icon_uri": "FINE"
+          },
+          "weather_id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+          "race_comment": "BUSTER KEATON (2) finished third over 1200m at this track last time out and with weight relief today looks hard to beat. HARLEY'S FATE (4) finds it hard to win with two from 14 starts but has been placed on three occasions and must be included among the top chances. INTREPID (9) ran fourth last time out at this track. Looks one of the genuine hopes in the race. THE GLIDING FISH (7) finished tenth last start, beaten 6 lengths at Scottsville over 1200m. Comes here with definite place claims and should be included in exotic bets.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Greyville\",\"state\":\"SAF\",\"country\":\"SAF\",\"number\":5,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "BUSTER KEATON (2) finished third over 1200m at this track last time out and with weight relief today looks hard to beat. HARLEY'S FATE (4) finds it hard to win with two from 14 starts but has been placed on three occasions and must be included among the top chances. INTREPID (9) ran fourth last time out at this track. Looks one of the genuine hopes in the race. THE GLIDING FISH (7) finished tenth last start, beaten 6 lengths at Scottsville over 1200m. Comes here with definite place claims and should be included in exotic bets."
+        },
+        "venue_id": "e2f2c9d6-2188-4d9d-9fe1-51f5ecc766d3",
+        "venue_name": "Greyville",
+        "venue_state": "SAF",
+        "venue_country": "SAF"
+      },
+      "5e0d6d24-e9be-40d3-b514-11661cb5e790": {
+        "race_id": "5e0d6d24-e9be-40d3-b514-11661cb5e790",
+        "race_name": "Stolopp",
+        "race_number": 8,
+        "meeting_id": "27d0150a-80e5-40d0-ab70-75432b765f92",
+        "meeting_name": "Farjestad",
+        "category_id": "161d9be2-e909-4326-8c2c-35ed71fb460b",
+        "advertised_start": {
+          "seconds": 1698065700
+        },
+        "race_form": {
+          "distance": 2140,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "a1c0fe16-b088-11e7-aabe-061a47531548",
+            "name": "Easy",
+            "short_name": "easy"
+          },
+          "track_condition_id": "a1c0fe16-b088-11e7-aabe-061a47531548",
+          "weather": {
+            "id": "5ba75165-3cec-11eb-88bb-36fbfdf5d97f",
+            "name": "OCAST",
+            "short_name": "ocast",
+            "icon_uri": "OCAST"
+          },
+          "weather_id": "5ba75165-3cec-11eb-88bb-36fbfdf5d97f",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Farjestad\",\"state\":\"SWE\",\"country\":\"SWE\",\"number\":8,\"race_name\":\"Stolopp\",\"time\":\"2023-10-23T12:55:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net"
+        },
+        "venue_id": "6947fa99-1bf6-4ce7-a65d-2d2bc55eff6a",
+        "venue_name": "Farjestad",
+        "venue_state": "SWE",
+        "venue_country": "SWE"
+      },
+      "ef86ebfc-b656-438c-bd22-a4febb705d18": {
+        "race_id": "ef86ebfc-b656-438c-bd22-a4febb705d18",
+        "race_name": "Race 12",
+        "race_number": 12,
+        "meeting_id": "a23ec8cc-6806-4387-845c-5263e9613f30",
+        "meeting_name": "Swindon Bags",
+        "category_id": "9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+        "advertised_start": {
+          "seconds": 1698065940
+        },
+        "race_form": {
+          "distance": 476,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "weather": {
+            "id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+            "name": "FINE",
+            "short_name": "fine",
+            "icon_uri": "FINE"
+          },
+          "weather_id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+          "race_comment": "MINGLERS AVENUE (3) is mixing form lately, finishing out of the placings last time at this track but was an A7 winner two back at this track. Looks suited here and big improvement expected. JETTS RAZL (5) is heading the right way. In the minors two back with a narrow third then scored by 2.5 lengths in an A6 last time at this track over 476m (29.21). Up a grade but hard to fault on that latest effort. A real threat again. MINGLERS BLOSSOM (1) has been in the frame at her last two runs, most recently when third (29.02) in an A5 over 476m at this track. Can feature with the right run. COLD KNIGHT (6) is worth including.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"\",\"state\":\"\",\"country\":\"\",\"number\":0,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "MINGLERS AVENUE (3) is mixing form lately, finishing out of the placings last time at this track but was an A7 winner two back at this track. Looks suited here and big improvement expected. JETTS RAZL (5) is heading the right way. In the minors two back with a narrow third then scored by 2.5 lengths in an A6 last time at this track over 476m (29.21). Up a grade but hard to fault on that latest effort. A real threat again. MINGLERS BLOSSOM (1) has been in the frame at her last two runs, most recently when third (29.02) in an A5 over 476m at this track. Can feature with the right run. COLD KNIGHT (6) is worth including."
+        },
+        "venue_id": "a46b9f0b-45b0-45ec-9e9a-1652c551f0bf",
+        "venue_name": "Swindon Bags",
+        "venue_state": "UK",
+        "venue_country": "UK"
+      },
+      "f3ded492-b3f8-46b2-8a48-0c0b07472e0e": {
+        "race_id": "f3ded492-b3f8-46b2-8a48-0c0b07472e0e",
+        "race_name": "Race 1",
+        "race_number": 1,
+        "meeting_id": "aabdf60c-c22e-4a26-b906-aa143dd6cb71",
+        "meeting_name": "Kinsley Bags.",
+        "category_id": "9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+        "advertised_start": {
+          "seconds": 1698066540
+        },
+        "race_form": {
+          "distance": 268,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "weather": {
+            "id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+            "name": "FINE",
+            "short_name": "fine",
+            "icon_uri": "FINE"
+          },
+          "weather_id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+          "race_comment": "BANDIT EURO (4) is a talented type and proved too strong last time to win by a nose at this track in a handy 16.45 beating KULANA GOLD. Can make it back-to-back wins. BE WHATEVER (2) ran a good time (16.31) winning a D3 two back at this track but missed the frame latest finishing sixth at this track. Rates a winning chance on best. BRAYVIEW RAVEN (5) made it two minor placings on the trot when beaten second (16.47) in a D3 at this track last time out. Well placed here and should do much better. TAKEITEASYLOLA (1) was out of placings last time (16.91) at this track in a D3, finishing fifth and beaten 5.5 lengths. Loves this trap, having won three of five starts.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"\",\"state\":\"\",\"country\":\"\",\"number\":0,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "BANDIT EURO (4) is a talented type and proved too strong last time to win by a nose at this track in a handy 16.45 beating KULANA GOLD. Can make it back-to-back wins. BE WHATEVER (2) ran a good time (16.31) winning a D3 two back at this track but missed the frame latest finishing sixth at this track. Rates a winning chance on best. BRAYVIEW RAVEN (5) made it two minor placings on the trot when beaten second (16.47) in a D3 at this track last time out. Well placed here and should do much better. TAKEITEASYLOLA (1) was out of placings last time (16.91) at this track in a D3, finishing fifth and beaten 5.5 lengths. Loves this trap, having won three of five starts."
+        },
+        "venue_id": "ee45cc34-ca85-423b-b5f3-fa7351521d31",
+        "venue_name": "Kinsley Bags.",
+        "venue_state": "UK",
+        "venue_country": "UK"
+      },
+      "f544601b-0a56-40c2-a299-1d2a800c5c7b": {
+        "race_id": "f544601b-0a56-40c2-a299-1d2a800c5c7b",
+        "race_name": "Race 11",
+        "race_number": 11,
+        "meeting_id": "121ec133-23ef-47d3-98c1-2a1045a64ccb",
+        "meeting_name": "Suffolk Downs Am",
+        "category_id": "9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+        "advertised_start": {
+          "seconds": 1698065820
+        },
+        "race_form": {
+          "distance": 388,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "race_comment": "SALEMS STANLEY (5) was a fast winner last time with a dominant 7 lengths win (34.85) at this track. Solid record at the distance winning seven races. Can make it two on the bounce. MINDURBUSINESS (1) is long overdue for a win and in super consistent form, jumping from this trap to place last time at this track (35.50), making it three straight minors. Expected to feature. SIGNATURE CARL (4) filled a minor placing last start at this track behind Savana Bill (24.72) in an A3. Has clocked a sharp 24.15 best time here at this trip. Expected to feature. LAGILE OKAY (3) was out of the money here last time out but can bounce back.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Suffolk Downs Am\",\"state\":\"UK\",\"country\":\"UK\",\"number\":11,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "SALEMS STANLEY (5) was a fast winner last time with a dominant 7 lengths win (34.85) at this track. Solid record at the distance winning seven races. Can make it two on the bounce. MINDURBUSINESS (1) is long overdue for a win and in super consistent form, jumping from this trap to place last time at this track (35.50), making it three straight minors. Expected to feature. SIGNATURE CARL (4) filled a minor placing last start at this track behind Savana Bill (24.72) in an A3. Has clocked a sharp 24.15 best time here at this trip. Expected to feature. LAGILE OKAY (3) was out of the money here last time out but can bounce back."
+        },
+        "venue_id": "35d41a93-9295-4dba-b5be-b76a6548fc17",
+        "venue_name": "Suffolk Downs Am",
+        "venue_state": "UK",
+        "venue_country": "UK"
+      },
+      "f7b67124-a023-44be-9ec8-af061d64ce93": {
+        "race_id": "f7b67124-a023-44be-9ec8-af061d64ce93",
+        "race_name": "238Mtrs (D4)",
+        "race_number": 10,
+        "meeting_id": "5d777f7f-a652-4a1f-84fa-71485715abfd",
+        "meeting_name": "Harlow Bags",
+        "category_id": "9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+        "advertised_start": {
+          "seconds": 1698066660
+        },
+        "race_form": {
+          "distance": 238,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "race_comment": "SPRINGSIDE CLODA (2) was a course and distance placegetter (15.94) last time also from the same draw, finishing a 5 length third in a D4. Has the ability and looks a key chance. TRAPPER BILL (3) has been mixing form lately, hitting the frame two back before finishing fourth (15.73) at this track in a D4. This looks easier and expected to improve sharply. SHEADOGUE VIEW (6) opened his account last time out by 1.3 lengths at this track over 238m (15.57). Expected to feature again. TULLYMURRY NIFTY (1) is on a run of four minor placings and is sure to play a big role again.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"\",\"state\":\"\",\"country\":\"\",\"number\":0,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "SPRINGSIDE CLODA (2) was a course and distance placegetter (15.94) last time also from the same draw, finishing a 5 length third in a D4. Has the ability and looks a key chance. TRAPPER BILL (3) has been mixing form lately, hitting the frame two back before finishing fourth (15.73) at this track in a D4. This looks easier and expected to improve sharply. SHEADOGUE VIEW (6) opened his account last time out by 1.3 lengths at this track over 238m (15.57). Expected to feature again. TULLYMURRY NIFTY (1) is on a run of four minor placings and is sure to play a big role again."
+        },
+        "venue_id": "630485d1-2812-4965-80c1-a84c8f71b4b5",
+        "venue_name": "Harlow Bags",
+        "venue_state": "UK",
+        "venue_country": "UK"
+      }
+    }
+  },
+  "message": "Next 10 races from each category"
+}
