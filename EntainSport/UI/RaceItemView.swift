@@ -12,23 +12,29 @@ struct RaceItemViewModel {
     let meetingName: String
     let raceName: String
     let raceNumber: String
-    let time: TimeInterval
+    let time: String
+    let timeColor: Color
     
-    init(imageName: String, meetingName: String, raceName: String, raceNumber: String, time: TimeInterval) {
+    init(imageName: String, 
+         meetingName: String,
+         raceName: String,
+         raceNumber: String,
+         time: String,
+         timeColor: Color) {
+        
         self.imageName = imageName
         self.meetingName = meetingName
         self.raceName = raceName
         self.raceNumber = raceNumber
         self.time = time
+        self.timeColor = timeColor
     }
-    
-    
 }
 
 struct RaceItemView: View {
     let viewModel: RaceItemViewModel
     var body: some View {
-        HStack(spacing: 8) {
+        HStack(spacing: 0) {
             // Image
             VStack {
                 Image(viewModel.imageName)
@@ -51,7 +57,7 @@ struct RaceItemView: View {
                 Spacer()
             }
             .padding(.vertical, 12)
-            .padding(.leading, 12)
+            .padding(.horizontal, 12)
             
             Spacer()
             
@@ -66,22 +72,21 @@ struct RaceItemView: View {
                 Spacer()
             }
             .padding(.vertical, 12)
-            .frame(width: 40)
+            .padding(.horizontal, 10)
+            .frame(width: 60)
             
             Divider()
                 .overlay(.neutralDark)
             
             // count down timer
             VStack {
-                ZStack {
-                    Text("test")
-                        .foregroundColor(.background)
-                 
-                }
+                Text(viewModel.time)
+                    .foregroundColor(viewModel.timeColor)
                 Spacer()
             }
             .padding(.vertical, 12)
-            .frame(width: 60)
+            .padding(.horizontal, 12)
+            .frame(width: 84)
         }
         
         .padding(.leading, 20)
@@ -94,7 +99,8 @@ struct RaceItemView: View {
                                                   meetingName: "Townsville",
                                                   raceName: "Shelly Dennis",
                                                   raceNumber: "No \n2",
-                                                  time: 1698138900))
+                                                  time: "5m4s",
+                                                  timeColor: .secondary2))
         .background(.main)
     }
 }

@@ -33,10 +33,10 @@ struct SelectableButton: View {
                     .padding(4)
                     .scaledToFit()
                     .frame(width: 40, height: 40)
-                    .foregroundColor(viewModel.selectedState ? .orange : .gray)
+                    .foregroundColor(viewModel.selectedState ? .secondary2 : .neutralLight)
                 
                 Text(viewModel.title)
-                    .foregroundColor(viewModel.selectedState ? .orange : .gray)
+                    .foregroundColor(viewModel.selectedState ? .secondary2 : .neutralLight)
             }
             .padding(.horizontal, 10)
             .padding(.vertical, 10)
