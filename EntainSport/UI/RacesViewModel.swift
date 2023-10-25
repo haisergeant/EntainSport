@@ -26,7 +26,7 @@ class RacesViewModel: ObservableObject {
     // For Select/Deselect all
     @Published var selectedAll = true
     @Published var selectAllImage = Image(systemName: "checkmark.circle.fill")
-    @Published var selectAllTitle = "Deselect All"
+    @Published var selectAllTitle = "Deselect all"
     
     private var cancellables: Set<AnyCancellable> = []
     @Published var currentTime: Date = Date()

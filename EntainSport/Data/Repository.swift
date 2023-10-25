@@ -20,7 +20,7 @@ class Repository {
     }
     
     func requestData<T: Codable>(url: URL) async -> Result<T, Error> {
-        guard networkMonitor.isConnected else {
+        if !url.isFileURL, !networkMonitor.isConnected {
             return .failure(NetworkError.noInternet)
         }
         

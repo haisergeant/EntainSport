@@ -13,6 +13,9 @@
 		E27189572AE8C4E9003A275A /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27189562AE8C4E9003A275A /* NetworkMonitor.swift */; };
 		E271895D2AE8EDA7003A275A /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E271895C2AE8EDA7003A275A /* RepositoryTests.swift */; };
 		E271895F2AE8EF16003A275A /* racing-invalid-format.json in Resources */ = {isa = PBXBuildFile; fileRef = E271895E2AE8EF16003A275A /* racing-invalid-format.json */; };
+		E271899B2AE93562003A275A /* racing-valid-format.json in Resources */ = {isa = PBXBuildFile; fileRef = E271899A2AE93562003A275A /* racing-valid-format.json */; };
+		E271899D2AE93977003A275A /* TimeHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E271899C2AE93977003A275A /* TimeHelperTests.swift */; };
+		E271899F2AE93F5F003A275A /* RacesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E271899E2AE93F5F003A275A /* RacesViewModelTests.swift */; };
 		E2AE4BD02AE53EF400AF7A88 /* EntainSportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE4BCF2AE53EF400AF7A88 /* EntainSportApp.swift */; };
 		E2AE4BD42AE53EF500AF7A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2AE4BD32AE53EF500AF7A88 /* Assets.xcassets */; };
 		E2AE4BD82AE53EF500AF7A88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2AE4BD72AE53EF500AF7A88 /* Preview Assets.xcassets */; };
@@ -34,13 +37,6 @@
 			remoteGlobalIDString = E2AE4BCB2AE53EF400AF7A88;
 			remoteInfo = EntainSport;
 		};
-		E2AE4BE82AE53EF500AF7A88 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E2AE4BC42AE53EF400AF7A88 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2AE4BCB2AE53EF400AF7A88;
-			remoteInfo = EntainSport;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -50,13 +46,15 @@
 		E27189562AE8C4E9003A275A /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		E271895C2AE8EDA7003A275A /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		E271895E2AE8EF16003A275A /* racing-invalid-format.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "racing-invalid-format.json"; sourceTree = "<group>"; };
+		E271899A2AE93562003A275A /* racing-valid-format.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "racing-valid-format.json"; sourceTree = "<group>"; };
+		E271899C2AE93977003A275A /* TimeHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHelperTests.swift; sourceTree = "<group>"; };
+		E271899E2AE93F5F003A275A /* RacesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesViewModelTests.swift; sourceTree = "<group>"; };
 		E2AE4BCC2AE53EF400AF7A88 /* EntainSport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EntainSport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AE4BCF2AE53EF400AF7A88 /* EntainSportApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntainSportApp.swift; sourceTree = "<group>"; };
 		E2AE4BD32AE53EF500AF7A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2AE4BD52AE53EF500AF7A88 /* EntainSport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EntainSport.entitlements; sourceTree = "<group>"; };
 		E2AE4BD72AE53EF500AF7A88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2AE4BDD2AE53EF500AF7A88 /* EntainSportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EntainSportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2AE4BE72AE53EF500AF7A88 /* EntainSportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EntainSportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AE4BFB2AE5DD6400AF7A88 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		E2AE4BFD2AE5DD7A00AF7A88 /* APIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepository.swift; sourceTree = "<group>"; };
 		E2AE4BFF2AE5E11200AF7A88 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
@@ -82,13 +80,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2AE4BE42AE53EF500AF7A88 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				E271895C2AE8EDA7003A275A /* RepositoryTests.swift */,
+				E271899A2AE93562003A275A /* racing-valid-format.json */,
 				E271895E2AE8EF16003A275A /* racing-invalid-format.json */,
 			);
 			path = Data;
@@ -104,6 +96,8 @@
 		E27189592AE8EBF7003A275A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E271899C2AE93977003A275A /* TimeHelperTests.swift */,
+				E271899E2AE93F5F003A275A /* RacesViewModelTests.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -113,7 +107,6 @@
 			children = (
 				E2AE4BCE2AE53EF400AF7A88 /* EntainSport */,
 				E2AE4BE02AE53EF500AF7A88 /* EntainSportTests */,
-				E2AE4BEA2AE53EF500AF7A88 /* EntainSportUITests */,
 				E2AE4BCD2AE53EF400AF7A88 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,7 +116,6 @@
 			children = (
 				E2AE4BCC2AE53EF400AF7A88 /* EntainSport.app */,
 				E2AE4BDD2AE53EF500AF7A88 /* EntainSportTests.xctest */,
-				E2AE4BE72AE53EF500AF7A88 /* EntainSportUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,13 +149,6 @@
 				E27189582AE8EBF0003A275A /* Data */,
 			);
 			path = EntainSportTests;
-			sourceTree = "<group>";
-		};
-		E2AE4BEA2AE53EF500AF7A88 /* EntainSportUITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EntainSportUITests;
 			sourceTree = "<group>";
 		};
 		E2AE4BFA2AE5DD3C00AF7A88 /* Data */ = {
@@ -229,24 +214,6 @@
 			productReference = E2AE4BDD2AE53EF500AF7A88 /* EntainSportTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E2AE4BE62AE53EF500AF7A88 /* EntainSportUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E2AE4BF72AE53EF500AF7A88 /* Build configuration list for PBXNativeTarget "EntainSportUITests" */;
-			buildPhases = (
-				E2AE4BE32AE53EF500AF7A88 /* Sources */,
-				E2AE4BE42AE53EF500AF7A88 /* Frameworks */,
-				E2AE4BE52AE53EF500AF7A88 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E2AE4BE92AE53EF500AF7A88 /* PBXTargetDependency */,
-			);
-			name = EntainSportUITests;
-			productName = EntainSportUITests;
-			productReference = E2AE4BE72AE53EF500AF7A88 /* EntainSportUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -263,10 +230,6 @@
 					E2AE4BDC2AE53EF500AF7A88 = {
 						CreatedOnToolsVersion = 15.0;
 						LastSwiftMigration = 1500;
-						TestTargetID = E2AE4BCB2AE53EF400AF7A88;
-					};
-					E2AE4BE62AE53EF500AF7A88 = {
-						CreatedOnToolsVersion = 15.0;
 						TestTargetID = E2AE4BCB2AE53EF400AF7A88;
 					};
 				};
@@ -286,7 +249,6 @@
 			targets = (
 				E2AE4BCB2AE53EF400AF7A88 /* EntainSport */,
 				E2AE4BDC2AE53EF500AF7A88 /* EntainSportTests */,
-				E2AE4BE62AE53EF500AF7A88 /* EntainSportUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -308,13 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E271895F2AE8EF16003A275A /* racing-invalid-format.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2AE4BE52AE53EF500AF7A88 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E271899B2AE93562003A275A /* racing-valid-format.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,14 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E271899D2AE93977003A275A /* TimeHelperTests.swift in Sources */,
+				E271899F2AE93F5F003A275A /* RacesViewModelTests.swift in Sources */,
 				E271895D2AE8EDA7003A275A /* RepositoryTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2AE4BE32AE53EF500AF7A88 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,11 +312,6 @@
 			isa = PBXTargetDependency;
 			target = E2AE4BCB2AE53EF400AF7A88 /* EntainSport */;
 			targetProxy = E2AE4BDE2AE53EF500AF7A88 /* PBXContainerItemProxy */;
-		};
-		E2AE4BE92AE53EF500AF7A88 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E2AE4BCB2AE53EF400AF7A88 /* EntainSport */;
-			targetProxy = E2AE4BE82AE53EF500AF7A88 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -609,50 +555,6 @@
 			};
 			name = Release;
 		};
-		E2AE4BF82AE53EF500AF7A88 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5Q7X663MJ7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.haile.EntainSportUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EntainSport;
-			};
-			name = Debug;
-		};
-		E2AE4BF92AE53EF500AF7A88 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5Q7X663MJ7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.haile.EntainSportUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EntainSport;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -679,15 +581,6 @@
 			buildConfigurations = (
 				E2AE4BF52AE53EF500AF7A88 /* Debug */,
 				E2AE4BF62AE53EF500AF7A88 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E2AE4BF72AE53EF500AF7A88 /* Build configuration list for PBXNativeTarget "EntainSportUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E2AE4BF82AE53EF500AF7A88 /* Debug */,
-				E2AE4BF92AE53EF500AF7A88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

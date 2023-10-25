@@ -1,0 +1,426 @@
+{
+  "status": 200,
+  "data": {
+    "next_to_go_ids": [
+      "cecb3dd4-70a1-4c40-a80e-876756239557",
+      "c256fb3e-4270-4665-b092-024978ff308a",
+      "e599777a-b018-407c-afe2-ac22cbf8c18d",
+      "215b0919-051f-492b-8a79-956a270b25a7",
+      "e57aa5d0-40b2-44aa-96f5-8e22b181790f",
+      "2a66a91d-cbcc-4f9c-9ed0-87d80aa25f3c",
+      "37e23f1c-9720-4945-b4d2-e5e01bc330c5",
+      "4157ce1c-d316-458b-92e2-139620e5bc40",
+      "2416efe0-dcd5-4c03-911e-5efeea59b539",
+      "c5d2b6bf-05f2-472b-9f3a-25d56d1ed704"
+    ],
+    "race_summaries": {
+      "215b0919-051f-492b-8a79-956a270b25a7": {
+        "race_id": "215b0919-051f-492b-8a79-956a270b25a7",
+        "race_name": "The Sporting Globe After The Last (Bm78)",
+        "race_number": 9,
+        "meeting_id": "9b892038-7597-476f-8354-03c9fc394d22",
+        "meeting_name": "Geelong",
+        "category_id": "4a2788f8-e825-4d36-9894-efd4baf1cfae",
+        "advertised_start": {
+          "seconds": 1698214800
+        },
+        "race_form": {
+          "distance": 1500,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "066119d8-3b74-11e8-a5eb-06a5c6d9a756",
+            "name": "Soft5",
+            "short_name": "soft5"
+          },
+          "track_condition_id": "066119d8-3b74-11e8-a5eb-06a5c6d9a756",
+          "weather": {
+            "id": "60380761-e046-11e7-9984-06a96a561a68",
+            "name": "Showery",
+            "short_name": "showery",
+            "icon_uri": "Showery"
+          },
+          "weather_id": "60380761-e046-11e7-9984-06a96a561a68",
+          "race_comment": "VON HAUKE (6) looks a nice way to end the card. He beat the talented Helix two back at Sandown-Hillside and then ran on well off a sit and sprint in a listed race at Flemington behind Tamerlane, beaten 3.3 lengths. Drops in class for this and 1500m suits. PRESSER (10) was just even behind Helix last start but had been racing well prior. Up slightly in trip suits and he can bounce back without surprising. ELECTRIC IMPULSE (7) is flying, overcoming the drop back to 1200m last start to score strongly down the Flemington straight. Up to 1500m should suit even better and she's still on the up. Big chance. ROGUE ROCKER (3) next best.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Geelong\",\"state\":\"VIC\",\"country\":\"AUS\",\"number\":9,\"race_name\":\"The Sporting Globe After The Last (Bm78)\",\"time\":\"2023-10-25T06:20:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "VON HAUKE (6) looks a nice way to end the card. He beat the talented Helix two back at Sandown-Hillside and then ran on well off a sit and sprint in a listed race at Flemington behind Tamerlane, beaten 3.3 lengths. Drops in class for this and 1500m suits. PRESSER (10) was just even behind Helix last start but had been racing well prior. Up slightly in trip suits and he can bounce back without surprising. ELECTRIC IMPULSE (7) is flying, overcoming the drop back to 1200m last start to score strongly down the Flemington straight. Up to 1500m should suit even better and she's still on the up. Big chance. ROGUE ROCKER (3) next best."
+        },
+        "venue_id": "b665825c-c053-4518-9b14-fa5cc12c8428",
+        "venue_name": "Geelong",
+        "venue_state": "VIC",
+        "venue_country": "AUS"
+      },
+      "2416efe0-dcd5-4c03-911e-5efeea59b539": {
+        "race_id": "2416efe0-dcd5-4c03-911e-5efeea59b539",
+        "race_name": "Race 3 - 1200",
+        "race_number": 3,
+        "meeting_id": "730dfe60-001d-4ed5-845c-979543f3be2f",
+        "meeting_name": "Funabashi",
+        "category_id": "4a2788f8-e825-4d36-9894-efd4baf1cfae",
+        "advertised_start": {
+          "seconds": 1698215400
+        },
+        "race_form": {
+          "distance": 1200,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "weather": {
+            "id": "01994c9e-3b74-11e8-a5eb-06a5c6d9a756",
+            "name": "Fine",
+            "short_name": "fine",
+            "icon_uri": "Fine"
+          },
+          "weather_id": "01994c9e-3b74-11e8-a5eb-06a5c6d9a756",
+          "race_comment": "MASTER PLAN (8) is racing well having put two wins together. Went forward and proved too strong last time out, scoring by 6 lengths over 1200m at this track. Has his share of talent. Hard to beat in another suitable race. REISHIN (4) has been very consistent with a string of top-two finishes. Went forward last start over 1200m at Monbetsu and held on well for second, beaten a head. Going up a level this time but he is good enough to play a major role. KEW RAMBLER (6) finished third over 1400m at Urawa at her most recent appearance on May 29. Can make her presence felt fresh. HAKUSAN BRILLER (7) is back after a break of 12 weeks. Was racing at JRA level last time in so can be in the mix in this company.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Funabashi\",\"state\":\"JPN\",\"country\":\"JPN\",\"number\":3,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "MASTER PLAN (8) is racing well having put two wins together. Went forward and proved too strong last time out, scoring by 6 lengths over 1200m at this track. Has his share of talent. Hard to beat in another suitable race. REISHIN (4) has been very consistent with a string of top-two finishes. Went forward last start over 1200m at Monbetsu and held on well for second, beaten a head. Going up a level this time but he is good enough to play a major role. KEW RAMBLER (6) finished third over 1400m at Urawa at her most recent appearance on May 29. Can make her presence felt fresh. HAKUSAN BRILLER (7) is back after a break of 12 weeks. Was racing at JRA level last time in so can be in the mix in this company."
+        },
+        "venue_id": "f311d6e8-cb33-4433-8892-9145d4b15238",
+        "venue_name": "Funabashi",
+        "venue_state": "JPN",
+        "venue_country": "JPN"
+      },
+      "2a66a91d-cbcc-4f9c-9ed0-87d80aa25f3c": {
+        "race_id": "2a66a91d-cbcc-4f9c-9ed0-87d80aa25f3c",
+        "race_name": "Race 3 - 1200",
+        "race_number": 3,
+        "meeting_id": "0bcc2023-39ea-4d45-aec7-b56df4bf1f96",
+        "meeting_name": "Monbetsu",
+        "category_id": "4a2788f8-e825-4d36-9894-efd4baf1cfae",
+        "advertised_start": {
+          "seconds": 1698215100
+        },
+        "race_form": {
+          "distance": 1200,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "race_comment": "RUN RABBIT RUN (7) finished fifth over 1700m at this track two weeks ago. Suitably placed so anticipating a big run this time. TROPICO (1) missed the frame last start over 1200m at this track, finishing fourth. Likely improver with strong prospects. D MARIA (5) ran well below her best last time over 1200m at this track when tenth at $3. Has a win and three minor placings from five starts at this track and distance. Winning claims on best figures. NISHINO TSUKIAKARI (2) failed to figure again last time over 1700m at this track when ninth. Will drift back but wind up late. Will be doing her best work late.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Monbetsu\",\"state\":\"JPN\",\"country\":\"JPN\",\"number\":3,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "RUN RABBIT RUN (7) finished fifth over 1700m at this track two weeks ago. Suitably placed so anticipating a big run this time. TROPICO (1) missed the frame last start over 1200m at this track, finishing fourth. Likely improver with strong prospects. D MARIA (5) ran well below her best last time over 1200m at this track when tenth at $3. Has a win and three minor placings from five starts at this track and distance. Winning claims on best figures. NISHINO TSUKIAKARI (2) failed to figure again last time over 1700m at this track when ninth. Will drift back but wind up late. Will be doing her best work late."
+        },
+        "venue_id": "94b8b32d-4ab9-42b8-9210-685099dae442",
+        "venue_name": "Monbetsu",
+        "venue_state": "JPN",
+        "venue_country": "JPN"
+      },
+      "37e23f1c-9720-4945-b4d2-e5e01bc330c5": {
+        "race_id": "37e23f1c-9720-4945-b4d2-e5e01bc330c5",
+        "race_name": "Ladbrokes Hub",
+        "race_number": 7,
+        "meeting_id": "14226157-8cd8-40a9-bd6e-e6e7b6d65715",
+        "meeting_name": "Temora",
+        "category_id": "9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+        "advertised_start": {
+          "seconds": 1698215160
+        },
+        "race_form": {
+          "distance": 457,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "weather": {
+            "id": "01994c9e-3b74-11e8-a5eb-06a5c6d9a756",
+            "name": "Fine",
+            "short_name": "fine",
+            "icon_uri": "Fine"
+          },
+          "weather_id": "01994c9e-3b74-11e8-a5eb-06a5c6d9a756",
+          "race_comment": "ACE'S CHANCE (1) has been in the money at five of 14 starts, winning two back before another minor placings latest when second (25.78) over 457m at this track. Form at the trip sound including two wins. Drawn the fence and expected to go close. QUEEN BOLT (3) carved over from wide out and boxed on strongly to finish 2 lengths away in third (25.89) behind Loxton Bale at this track. The form out of her last race has been franked. Racing well and deserves a win. CUPID'S DREAM (7) is progressing well with another good run, placing by 2.75 lengths (26.18) in a Grade 5 at this track. Was a winner at his only start from this draw. Can measure up. BOGAN VALLEY (2) can play a role in the finish without surprising.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"\",\"state\":\"\",\"country\":\"\",\"number\":0,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "ACE'S CHANCE (1) has been in the money at five of 14 starts, winning two back before another minor placings latest when second (25.78) over 457m at this track. Form at the trip sound including two wins. Drawn the fence and expected to go close. QUEEN BOLT (3) carved over from wide out and boxed on strongly to finish 2 lengths away in third (25.89) behind Loxton Bale at this track. The form out of her last race has been franked. Racing well and deserves a win. CUPID'S DREAM (7) is progressing well with another good run, placing by 2.75 lengths (26.18) in a Grade 5 at this track. Was a winner at his only start from this draw. Can measure up. BOGAN VALLEY (2) can play a role in the finish without surprising."
+        },
+        "venue_id": "3aa6e464-eaec-4651-aed4-e78982e66a18",
+        "venue_name": "Temora",
+        "venue_state": "NSW",
+        "venue_country": "AUS"
+      },
+      "4157ce1c-d316-458b-92e2-139620e5bc40": {
+        "race_id": "4157ce1c-d316-458b-92e2-139620e5bc40",
+        "race_name": "Pattersons Build Group Hcp (C1)",
+        "race_number": 7,
+        "meeting_id": "6ab9680f-1493-4eab-8b2f-b96c69a15b77",
+        "meeting_name": "Eagle Farm",
+        "category_id": "4a2788f8-e825-4d36-9894-efd4baf1cfae",
+        "advertised_start": {
+          "seconds": 1698215400
+        },
+        "race_form": {
+          "distance": 1200,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "11d7e662-487a-11ea-9d54-4689356d4521",
+            "name": "Good4",
+            "short_name": "good4"
+          },
+          "track_condition_id": "11d7e662-487a-11ea-9d54-4689356d4521",
+          "weather": {
+            "id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+            "name": "FINE",
+            "short_name": "fine",
+            "icon_uri": "FINE"
+          },
+          "weather_id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+          "race_comment": "IT'SMEMARIO (11) is progressing well and is close to a win after placing in both starts since a spell, the latest effort a 0.7L third at Sunshine Coast over 1000m. That will have brought him to his peak. Can win aided by a good draw. WARBY (1) returns from a spell of four-and-a-half months. Was safely held at the only appearance of last prep but had shown some decent form in NSW before that. Keep him safe off a solid trial. THE LIONS' GATE (4) is another that deserves respect resuming off a couple of trials. He returned some decent ratings last campaign and is drawn to get the favours. JUMP'N FLY (9) is fitter for recent racing. Include.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Eagle Farm\",\"state\":\"QLD\",\"country\":\"AUS\",\"number\":7,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "IT'SMEMARIO (11) is progressing well and is close to a win after placing in both starts since a spell, the latest effort a 0.7L third at Sunshine Coast over 1000m. That will have brought him to his peak. Can win aided by a good draw. WARBY (1) returns from a spell of four-and-a-half months. Was safely held at the only appearance of last prep but had shown some decent form in NSW before that. Keep him safe off a solid trial. THE LIONS' GATE (4) is another that deserves respect resuming off a couple of trials. He returned some decent ratings last campaign and is drawn to get the favours. JUMP'N FLY (9) is fitter for recent racing. Include."
+        },
+        "venue_id": "9019eaa9-85f1-413e-a235-9357aa9c2492",
+        "venue_name": "Eagle Farm",
+        "venue_state": "QLD",
+        "venue_country": "AUS"
+      },
+      "c256fb3e-4270-4665-b092-024978ff308a": {
+        "race_id": "c256fb3e-4270-4665-b092-024978ff308a",
+        "race_name": "Amelia Park Mdn",
+        "race_number": 2,
+        "meeting_id": "d414b21f-cf5b-4a1d-a6b2-6cf93e225d0e",
+        "meeting_name": "Ascot",
+        "category_id": "4a2788f8-e825-4d36-9894-efd4baf1cfae",
+        "advertised_start": {
+          "seconds": 1698214440
+        },
+        "race_form": {
+          "distance": 1800,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "11d7e662-487a-11ea-9d54-4689356d4521",
+            "name": "Good4",
+            "short_name": "good4"
+          },
+          "track_condition_id": "11d7e662-487a-11ea-9d54-4689356d4521",
+          "weather": {
+            "id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+            "name": "FINE",
+            "short_name": "fine",
+            "icon_uri": "FINE"
+          },
+          "weather_id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+          "race_comment": "RELIABLE QUEEN (7) has been threatening and was heavily bet at York 13 days ago beaten a whisker. The gun jockey sticks from that and hard fit she gets her chance. DARK LOOKS (8) was narrowly beaten at Northam up from a sprint to the mile. That stack up and she will be better for it. Draws inside and the extra 200m shouldn't bother. NORTHEAST EAGLE (1) missed a whisker at Northam over 1400m and has improved for the new barn. Suited this trip and longer and can't be ruled out. ROMANTIC RULER (2) is an improver in a leading barn. Has the rail and CJP is reunited. She's looking for longer and keep onside.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"\",\"state\":\"\",\"country\":\"\",\"number\":0,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "RELIABLE QUEEN (7) has been threatening and was heavily bet at York 13 days ago beaten a whisker. The gun jockey sticks from that and hard fit she gets her chance. DARK LOOKS (8) was narrowly beaten at Northam up from a sprint to the mile. That stack up and she will be better for it. Draws inside and the extra 200m shouldn't bother. NORTHEAST EAGLE (1) missed a whisker at Northam over 1400m and has improved for the new barn. Suited this trip and longer and can't be ruled out. ROMANTIC RULER (2) is an improver in a leading barn. Has the rail and CJP is reunited. She's looking for longer and keep onside."
+        },
+        "venue_id": "de377157-f1bb-4a56-89aa-1c8ed1e7390b",
+        "venue_name": "Ascot",
+        "venue_state": "WA",
+        "venue_country": "AUS"
+      },
+      "c5d2b6bf-05f2-472b-9f3a-25d56d1ed704": {
+        "race_id": "c5d2b6bf-05f2-472b-9f3a-25d56d1ed704",
+        "race_name": "Hanrahan Plumbing",
+        "race_number": 9,
+        "meeting_id": "416e9164-a787-4a72-bb7f-740e2985560d",
+        "meeting_name": "Bendigo",
+        "category_id": "9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+        "advertised_start": {
+          "seconds": 1698215640
+        },
+        "race_form": {
+          "distance": 425,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "weather": {
+            "id": "5ba75165-3cec-11eb-88bb-36fbfdf5d97f",
+            "name": "OCAST",
+            "short_name": "ocast",
+            "icon_uri": "OCAST"
+          },
+          "weather_id": "5ba75165-3cec-11eb-88bb-36fbfdf5d97f",
+          "race_comment": "YANKEE GIRL (2) is worth forgiving last start after finishing fourth (22.69) in a Mix 6/7 at Shepparton over 390m. The form from her last run stacks up well. Rates on top in this line up. WATCHING (7) had the drop on the lead and went on to be beaten 6 lengths into second (22.68) at Shepparton in a T3 Grade 6 over 390m. Yet to score from this box but has never missed the frame in two starts. Expecting another good run. MYSTICAL SKYE (1) has been settling off the speed lately, finishing fourth (22.78) last time in a T3 Grade 6 at Shepparton. Yet to win out of this box but has been in the placings four times from seven starts. Should be about the money. MORAINE MIA (8) is worth consideration after filling a hole at big odds last start.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Bendigo\",\"state\":\"VIC\",\"country\":\"AUS\",\"number\":9,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "YANKEE GIRL (2) is worth forgiving last start after finishing fourth (22.69) in a Mix 6/7 at Shepparton over 390m. The form from her last run stacks up well. Rates on top in this line up. WATCHING (7) had the drop on the lead and went on to be beaten 6 lengths into second (22.68) at Shepparton in a T3 Grade 6 over 390m. Yet to score from this box but has never missed the frame in two starts. Expecting another good run. MYSTICAL SKYE (1) has been settling off the speed lately, finishing fourth (22.78) last time in a T3 Grade 6 at Shepparton. Yet to win out of this box but has been in the placings four times from seven starts. Should be about the money. MORAINE MIA (8) is worth consideration after filling a hole at big odds last start."
+        },
+        "venue_id": "ab57e842-c2b1-4508-b1c8-dfa908a2db54",
+        "venue_name": "Bendigo",
+        "venue_state": "VIC",
+        "venue_country": "AUS"
+      },
+      "cecb3dd4-70a1-4c40-a80e-876756239557": {
+        "race_id": "cecb3dd4-70a1-4c40-a80e-876756239557",
+        "race_name": "Ag Tyres & Wheels",
+        "race_number": 8,
+        "meeting_id": "416e9164-a787-4a72-bb7f-740e2985560d",
+        "meeting_name": "Bendigo",
+        "category_id": "9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+        "advertised_start": {
+          "seconds": 1698214320
+        },
+        "race_form": {
+          "distance": 500,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "weather": {
+            "id": "5ba75165-3cec-11eb-88bb-36fbfdf5d97f",
+            "name": "OCAST",
+            "short_name": "ocast",
+            "icon_uri": "OCAST"
+          },
+          "weather_id": "5ba75165-3cec-11eb-88bb-36fbfdf5d97f",
+          "race_comment": "KINGSVILLE FLYER (1) has shown good improvement at his last two starts, most recently finishing 2nd at this track over 500m. Top chance in this line up. MASTER ELITE (5) put in a much better performance last start when in the placings at Shepparton behind Battle Axle (25.91) in a Grade 5. Has the pace to be prominent. Leading player again. WHITE SHIRAZ (4) turned spotting a big start finishing fifth (28.75) last time in a Grade 5 at this track. Solid record here including three wins. Shapes as one to consider. PROPERTY MOGUL (3) is always a threat when she draws this box.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Bendigo\",\"state\":\"VIC\",\"country\":\"AUS\",\"number\":8,\"race_name\":\"Ag Tyres \\u0026 Wheels\",\"time\":\"2023-10-25T06:12:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "KINGSVILLE FLYER (1) has shown good improvement at his last two starts, most recently finishing 2nd at this track over 500m. Top chance in this line up. MASTER ELITE (5) put in a much better performance last start when in the placings at Shepparton behind Battle Axle (25.91) in a Grade 5. Has the pace to be prominent. Leading player again. WHITE SHIRAZ (4) turned spotting a big start finishing fifth (28.75) last time in a Grade 5 at this track. Solid record here including three wins. Shapes as one to consider. PROPERTY MOGUL (3) is always a threat when she draws this box."
+        },
+        "venue_id": "ab57e842-c2b1-4508-b1c8-dfa908a2db54",
+        "venue_name": "Bendigo",
+        "venue_state": "VIC",
+        "venue_country": "AUS"
+      },
+      "e57aa5d0-40b2-44aa-96f5-8e22b181790f": {
+        "race_id": "e57aa5d0-40b2-44aa-96f5-8e22b181790f",
+        "race_name": "Race 9 - 1400",
+        "race_number": 9,
+        "meeting_id": "b69cf5cb-0386-4035-ac98-b143071e740a",
+        "meeting_name": "Kasamatsu",
+        "category_id": "4a2788f8-e825-4d36-9894-efd4baf1cfae",
+        "advertised_start": {
+          "seconds": 1698214800
+        },
+        "race_form": {
+          "distance": 1400,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "race_comment": "MEISHO CENTRE (4) was well in commission last start over 1400m at this track when sixth, beaten 7 lengths. Certainly deserves another chance. HIRUNO LOIRE (6) wound up strongly last time out to finish a long neck adrift in third over 1600m at this track. Among the leading chances. SHINZEN GREAT (8) turned in an eye-catching run over 1400m at this track last time, ridden back before coming home with a powerful run to finish second. Has an impressive strike rate at this distance with five wins from nine runs and is expected to be competitive. CORIN VANILLA (5) was an impressive winner last time over 1500m at Nagoya, leading throughout and putting 2.5 lengths on her rivals. Hosokawa Satoshi who has scored on her two times retains the mount. Among the top-three hopes.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Kasamatsu\",\"state\":\"JPN\",\"country\":\"JPN\",\"number\":9,\"race_name\":\"\",\"time\":\"1970-01-01T00:00:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "MEISHO CENTRE (4) was well in commission last start over 1400m at this track when sixth, beaten 7 lengths. Certainly deserves another chance. HIRUNO LOIRE (6) wound up strongly last time out to finish a long neck adrift in third over 1600m at this track. Among the leading chances. SHINZEN GREAT (8) turned in an eye-catching run over 1400m at this track last time, ridden back before coming home with a powerful run to finish second. Has an impressive strike rate at this distance with five wins from nine runs and is expected to be competitive. CORIN VANILLA (5) was an impressive winner last time over 1500m at Nagoya, leading throughout and putting 2.5 lengths on her rivals. Hosokawa Satoshi who has scored on her two times retains the mount. Among the top-three hopes."
+        },
+        "venue_id": "ee67caf8-e6db-4086-b31a-91bd79c8d8cd",
+        "venue_name": "Kasamatsu",
+        "venue_state": "JPN",
+        "venue_country": "JPN"
+      },
+      "e599777a-b018-407c-afe2-ac22cbf8c18d": {
+        "race_id": "e599777a-b018-407c-afe2-ac22cbf8c18d",
+        "race_name": "Orchestrate @ Stud 0400 351 880",
+        "race_number": 7,
+        "meeting_id": "76ba34db-3fcc-436e-8b12-9259a1c37cc3",
+        "meeting_name": "Albion Park",
+        "category_id": "9daef0d7-bf3c-4f50-921d-8e818c60fe61",
+        "advertised_start": {
+          "seconds": 1698214620
+        },
+        "race_form": {
+          "distance": 395,
+          "distance_type": {
+            "id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+            "name": "Metres",
+            "short_name": "m"
+          },
+          "distance_type_id": "570775ae-09ec-42d5-989d-7c8f06366aa7",
+          "track_condition": {
+            "id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+            "name": "Good",
+            "short_name": "good"
+          },
+          "track_condition_id": "10a14653-a33d-11e7-810d-0a1a4ae29bd2",
+          "weather": {
+            "id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+            "name": "FINE",
+            "short_name": "fine",
+            "icon_uri": "FINE"
+          },
+          "weather_id": "08e5f78c-1a36-11eb-9269-cef03e67f1a3",
+          "race_comment": "SPARKS WILL FLY (1) has missed the frame at her last two runs but could not have been more impressive the run prior in her excellent 24.90 win at Ipswich over 431m. Has the ability and looks hard to top. DURHAM (2) put in a much better performance last start when in the placings at this track behind Time Goes Bye (22.95) in a Grade 4. Has run slick time here, with a 22.78 PB at this distance. Can feature again. GOLD FILLINGS (3) missed the frame latest when seventh at this track (23.43) but scored four back at this track (22.81). Should be thereabouts. WHOLE TRUTH (8) can measure up with the right run.",
+          "additional_data": "{\"revealed_race_info\":{\"track_name\":\"Albion Park\",\"state\":\"QLD\",\"country\":\"AUS\",\"number\":7,\"race_name\":\"Orchestrate @ Stud 0400 351 880\",\"time\":\"2023-10-25T06:17:00Z\"}}",
+          "generated": 1,
+          "silk_base_url": "drr38safykj6s.cloudfront.net",
+          "race_comment_alternative": "SPARKS WILL FLY (1) has missed the frame at her last two runs but could not have been more impressive the run prior in her excellent 24.90 win at Ipswich over 431m. Has the ability and looks hard to top. DURHAM (2) put in a much better performance last start when in the placings at this track behind Time Goes Bye (22.95) in a Grade 4. Has run slick time here, with a 22.78 PB at this distance. Can feature again. GOLD FILLINGS (3) missed the frame latest when seventh at this track (23.43) but scored four back at this track (22.81). Should be thereabouts. WHOLE TRUTH (8) can measure up with the right run."
+        },
+        "venue_id": "12c496d8-9397-4ba4-ba3c-d34ca3625858",
+        "venue_name": "Albion Park",
+        "venue_state": "QLD",
+        "venue_country": "AUS"
+      }
+    }
+  },
+  "message": "Next 10 races from each category"
+}
