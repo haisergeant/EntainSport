@@ -7,13 +7,23 @@
 
 import Foundation
 
-
+// Protocol to define the service to be called
 protocol Service {
     func requestRace() async -> Result<RaceResponse, Error>
 }
 
 class Repository {
+    private let networkMonitor: NetworkMonitor
+    
+    init(networkMonitor: NetworkMonitor) {
+        self.networkMonitor = networkMonitor
+    }
+    
     func requestData<T: Codable>(url: URL) async -> Result<T, Error> {
+        guard networkMonitor.isConnected else {
+            return .failure(NetworkError.noInternet)
+        }
+        
         let request = URLRequest(url: url)
         
         do {
@@ -24,7 +34,7 @@ class Repository {
         }
     }
     
-    func handleResponse<T: Codable>(data: Data,
+    private func handleResponse<T: Codable>(data: Data,
                                     response: URLResponse,
                                     isLocalFile: Bool = false) -> Result<T, Error> {
         guard let httpResponse = response as? HTTPURLResponse, !isLocalFile else {

@@ -45,12 +45,16 @@ class RaceSummary: Codable {
     let category: RaceCategory
     let advertisedStart: TimeInterval
     
+    let distance: Double
+    let distanceType: String
+    let raceComment: String
+    
     let venueID: String
     let venueName: String
     let venueState: String
     let venueCountry: String
     
-    enum CodingKeys: String, CodingKey {
+    enum RootCodingKeys: String, CodingKey {
         case raceID = "race_id"
         case raceName = "race_name"
         case raceNumber = "race_number"
@@ -62,14 +66,27 @@ class RaceSummary: Codable {
         case venueName = "venue_name"
         case venueState = "venue_state"
         case venueCountry = "venue_country"
+        case raceForm = "race_form"
     }
     
     enum AdvertisedStartCodingKeys: String, CodingKey {
         case seconds
     }
     
+    enum RaceFormCodingKeys: String, CodingKey {
+        case distance
+        case raceComment = "race_comment"
+        case distanceType = "distance_type"
+    }
+    
+    enum ObjectConditionCodingKeys: String, CodingKey {
+        case id
+        case name
+        case shortName = "short_name"
+    }
+    
     required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let container = try decoder.container(keyedBy: RootCodingKeys.self)
         self.raceID = try container.decode(String.self, forKey: .raceID)
         self.raceName = try container.decode(String.self, forKey: .raceName)
         self.raceNumber = try container.decode(Int.self, forKey: .raceNumber)
@@ -79,6 +96,13 @@ class RaceSummary: Codable {
         
         let advertiseContainer = try container.nestedContainer(keyedBy: AdvertisedStartCodingKeys.self, forKey: .advertisedStart)
         self.advertisedStart = try advertiseContainer.decode(TimeInterval.self, forKey: .seconds)
+        
+        let formContainer = try container.nestedContainer(keyedBy: RaceFormCodingKeys.self, forKey: .raceForm)
+        self.distance = try formContainer.decode(Double.self, forKey: .distance)
+        self.raceComment = try formContainer.decode(String.self, forKey: .raceComment)
+        
+        let distanceContainer = try formContainer.nestedContainer(keyedBy: ObjectConditionCodingKeys.self, forKey: .distanceType)
+        self.distanceType = try distanceContainer.decode(String.self, forKey: .name)
         
         self.venueID = try container.decode(String.self, forKey: .venueID)
         self.venueName = try container.decode(String.self, forKey: .venueName)

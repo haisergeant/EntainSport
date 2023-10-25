@@ -8,6 +8,7 @@
 import Foundation
 
 enum NetworkError: Error {
+    case noInternet
     case invalidResponse
     case invalidFormat
     case unknown

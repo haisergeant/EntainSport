@@ -7,9 +7,11 @@
 
 import Foundation
 
+// EndPoint
 enum EndPoint {
     case race
     
+    /// API Endpoint
     var url: URL {
         switch self {
         case .race:
@@ -17,6 +19,7 @@ enum EndPoint {
         }
     }
     
+    /// Map to local file, used in Preview in SwiftUI
     var localUrl: URL {
         switch self {
         case .race:

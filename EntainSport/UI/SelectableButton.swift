@@ -37,6 +37,7 @@ struct SelectableButton: View {
                 
                 Text(viewModel.title)
                     .foregroundColor(viewModel.selectedState ? .secondary2 : .neutralLight)
+                    .font(.footnote)
             }
             .padding(.horizontal, 10)
             .padding(.vertical, 10)
@@ -49,3 +50,5 @@ struct SelectableButton: View {
                                                           title: "Pencil",
                                                           selected: .constant(true)))
 }
+
+

@@ -63,7 +63,6 @@ struct RaceItemView: View {
             
             Divider()
                 .overlay(.neutralDark)
-                .frame(width: 2)
             
             // race number
             VStack {
@@ -99,7 +98,7 @@ struct RaceItemView: View {
                                                   meetingName: "Townsville",
                                                   raceName: "Shelly Dennis",
                                                   raceNumber: "No \n2",
-                                                  time: "5m4s",
+                                                  time: "5m 4s",
                                                   timeColor: .secondary2))
         .background(.main)
     }

@@ -9,16 +9,24 @@ import Foundation
 import SwiftUI
 import Combine
 
+private struct RacesViewConstant {
+    static let maximumShowItems = 5
+}
+
 class RacesViewModel: ObservableObject {
     private let service: Service
     
     @Published var summaries = [RaceSummary]()
     @Published var viewModels = [RaceItemViewModel]()
-    @Published var filterModels = [SelectableButtonViewModel]()
     
     @Published var selectedGreyhound = true
     @Published var selectedHarness = true
     @Published var selectedHorse = true
+    
+    // For Select/Deselect all
+    @Published var selectedAll = true
+    @Published var selectAllImage = Image(systemName: "checkmark.circle.fill")
+    @Published var selectAllTitle = "Deselect All"
     
     private var cancellables: Set<AnyCancellable> = []
     @Published var currentTime: Date = Date()
@@ -27,26 +35,6 @@ class RacesViewModel: ObservableObject {
         self.service = service
         
         loadData()
-        filterModels = [
-            // Greyhound
-            SelectableButtonViewModel(image: Image(RaceCategory.greyhound.imageName),
-                                      title: RaceCategory.greyhound.title,
-                                      selected:
-                                        Binding(get: { self.selectedGreyhound },
-                                                set: { self.selectedGreyhound = $0 })),
-            
-            SelectableButtonViewModel(image: Image(RaceCategory.harness.imageName),
-                                      title: RaceCategory.harness.title,
-                                      selected:
-                                        Binding(get: { self.selectedHarness },
-                                                set: { self.selectedHarness = $0 })),
-            
-            SelectableButtonViewModel(image: Image(RaceCategory.horse.imageName),
-                                      title: RaceCategory.horse.title,
-                                      selected:
-                                        Binding(get: { self.selectedHorse },
-                                                set: { self.selectedHorse = $0 }))
-        ]
         
         Publishers.CombineLatest4($selectedGreyhound, $selectedHarness, $selectedHorse, $currentTime)
             .sink { [weak self] greyhound, harness, horse, date in
@@ -54,6 +42,9 @@ class RacesViewModel: ObservableObject {
                                                harness: harness,
                                                horse: horse,
                                                date: date)
+                self?.configureButtons(greyhound: greyhound,
+                                       harness: harness,
+                                       horse: horse)
             }
             .store(in: &cancellables)
         
@@ -69,21 +60,66 @@ class RacesViewModel: ObservableObject {
                                           harness: Bool,
                                           horse: Bool,
                                           date: Date) {
-        viewModels = summaries.filter { item in
-            item.category == .greyhound && greyhound ||
-            item.category == .harness && harness ||
-            item.category == .horse && horse
+        let firstBatchItems = Array(summaries.prefix(RacesViewConstant.maximumShowItems))
+        var selectedSummaries: [RaceSummary]
+        if !greyhound, !harness, !horse {
+            // Return next 5 items
+            selectedSummaries = Array(summaries
+                .dropFirst(RacesViewConstant.maximumShowItems)
+                .prefix(RacesViewConstant.maximumShowItems))
+        } else if greyhound, harness, horse {
+            // Return first 5 items
+            selectedSummaries = firstBatchItems
+        } else {
+            // If at least one filter selected, filter the whole list
+            selectedSummaries = summaries.filter { item in
+                item.category == .greyhound && greyhound ||
+                item.category == .harness && harness ||
+                item.category == .horse && horse
+            }
         }
-        .compactMap { summary -> RaceItemViewModel? in
-            guard let tuple = TimeHelper.formatTimeToValueAndColor(current: date,
-                                                                   next: Date(timeIntervalSince1970: summary.advertisedStart)) else { return nil }
-            
-            return RaceItemViewModel(imageName: summary.category.imageName,
-                                     meetingName: summary.meetingName,
-                                     raceName: summary.raceName,
-                                     raceNumber: "No \n\(summary.raceNumber)",
-                                     time: tuple.timeValue,
-                                     timeColor: tuple.timeColor)
+        
+        viewModels = []
+        var expiredSummaries = [RaceSummary]()
+        for summary in selectedSummaries {
+            if let tuple = TimeHelper.formatTimeToValueAndColor(current: date,
+                                                                next: Date(timeIntervalSince1970: summary.advertisedStart)) {
+                
+                viewModels.append(RaceItemViewModel(imageName: summary.category.imageName,
+                                                    meetingName: summary.meetingName,
+                                                    raceName: summary.raceName,
+                                                    raceNumber: "No \n\(summary.raceNumber)",
+                                                    time: tuple.timeValue,
+                                                    timeColor: tuple.timeColor))
+            } else {
+                expiredSummaries.append(summary)
+            }
+        }
+        
+        // Filter out expired summay
+        summaries = summaries.filter { item in
+            !expiredSummaries.contains { expiredItem in
+                item === expiredItem
+            }
+        }
+  
+        // trigger load next batch of events
+        if summaries.count < RacesViewConstant.maximumShowItems {
+            loadData()
+        }
+    }
+    
+    private func configureButtons(greyhound: Bool,
+                                  harness: Bool,
+                                  horse: Bool) {
+        if greyhound, harness, horse {
+            selectedAll = true
+            selectAllImage = Image(systemName: "checkmark.circle.fill")
+            selectAllTitle = "Deselect all"
+        } else {
+            selectedAll = false
+            selectAllImage = Image(systemName: "checkmark.circle")
+            selectAllTitle = "Select all"
         }
     }
     
@@ -94,6 +130,7 @@ class RacesViewModel: ObservableObject {
                 switch result {
                 case .success(let raceResponse):
                     summaries = raceResponse.raceSummaries.sorted { $0.advertisedStart < $1.advertisedStart }
+                    
                     configureDataWithFilters(greyhound: selectedGreyhound,
                                              harness: selectedHarness,
                                              horse: selectedHorse,
@@ -102,6 +139,18 @@ class RacesViewModel: ObservableObject {
                     print(error.localizedDescription)
                 }
             }
+        }
+    }
+    
+    func didTapSelectAll() {
+        if selectedAll {
+            selectedGreyhound = false
+            selectedHarness = false
+            selectedHorse = false
+        } else {
+            selectedGreyhound = true
+            selectedHarness = true
+            selectedHorse = true
         }
     }
 }

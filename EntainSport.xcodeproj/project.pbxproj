@@ -10,12 +10,12 @@
 		E201BF482AE7CBF5005F6ABD /* RaceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E201BF472AE7CBF5005F6ABD /* RaceItemView.swift */; };
 		E201BF4C2AE7D9E1005F6ABD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E201BF4B2AE7D9E1005F6ABD /* Colors.xcassets */; };
 		E27189552AE7FEEF003A275A /* RacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27189542AE7FEEF003A275A /* RacesViewModel.swift */; };
+		E27189572AE8C4E9003A275A /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27189562AE8C4E9003A275A /* NetworkMonitor.swift */; };
+		E271895D2AE8EDA7003A275A /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E271895C2AE8EDA7003A275A /* RepositoryTests.swift */; };
+		E271895F2AE8EF16003A275A /* racing-invalid-format.json in Resources */ = {isa = PBXBuildFile; fileRef = E271895E2AE8EF16003A275A /* racing-invalid-format.json */; };
 		E2AE4BD02AE53EF400AF7A88 /* EntainSportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE4BCF2AE53EF400AF7A88 /* EntainSportApp.swift */; };
 		E2AE4BD42AE53EF500AF7A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2AE4BD32AE53EF500AF7A88 /* Assets.xcassets */; };
 		E2AE4BD82AE53EF500AF7A88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2AE4BD72AE53EF500AF7A88 /* Preview Assets.xcassets */; };
-		E2AE4BE22AE53EF500AF7A88 /* EntainSportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE4BE12AE53EF500AF7A88 /* EntainSportTests.swift */; };
-		E2AE4BEC2AE53EF500AF7A88 /* EntainSportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE4BEB2AE53EF500AF7A88 /* EntainSportUITests.swift */; };
-		E2AE4BEE2AE53EF500AF7A88 /* EntainSportUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE4BED2AE53EF500AF7A88 /* EntainSportUITestsLaunchTests.swift */; };
 		E2AE4BFC2AE5DD6400AF7A88 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE4BFB2AE5DD6400AF7A88 /* Repository.swift */; };
 		E2AE4BFE2AE5DD7A00AF7A88 /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE4BFD2AE5DD7A00AF7A88 /* APIRepository.swift */; };
 		E2AE4C002AE5E11200AF7A88 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE4BFF2AE5E11200AF7A88 /* EndPoint.swift */; };
@@ -47,16 +47,16 @@
 		E201BF472AE7CBF5005F6ABD /* RaceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceItemView.swift; sourceTree = "<group>"; };
 		E201BF4B2AE7D9E1005F6ABD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E27189542AE7FEEF003A275A /* RacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesViewModel.swift; sourceTree = "<group>"; };
+		E27189562AE8C4E9003A275A /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		E271895C2AE8EDA7003A275A /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		E271895E2AE8EF16003A275A /* racing-invalid-format.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "racing-invalid-format.json"; sourceTree = "<group>"; };
 		E2AE4BCC2AE53EF400AF7A88 /* EntainSport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EntainSport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AE4BCF2AE53EF400AF7A88 /* EntainSportApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntainSportApp.swift; sourceTree = "<group>"; };
 		E2AE4BD32AE53EF500AF7A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2AE4BD52AE53EF500AF7A88 /* EntainSport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EntainSport.entitlements; sourceTree = "<group>"; };
 		E2AE4BD72AE53EF500AF7A88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2AE4BDD2AE53EF500AF7A88 /* EntainSportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EntainSportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2AE4BE12AE53EF500AF7A88 /* EntainSportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntainSportTests.swift; sourceTree = "<group>"; };
 		E2AE4BE72AE53EF500AF7A88 /* EntainSportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EntainSportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2AE4BEB2AE53EF500AF7A88 /* EntainSportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntainSportUITests.swift; sourceTree = "<group>"; };
-		E2AE4BED2AE53EF500AF7A88 /* EntainSportUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntainSportUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E2AE4BFB2AE5DD6400AF7A88 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		E2AE4BFD2AE5DD7A00AF7A88 /* APIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepository.swift; sourceTree = "<group>"; };
 		E2AE4BFF2AE5E11200AF7A88 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
@@ -92,6 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E27189582AE8EBF0003A275A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E271895C2AE8EDA7003A275A /* RepositoryTests.swift */,
+				E271895E2AE8EF16003A275A /* racing-invalid-format.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E27189592AE8EBF7003A275A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		E2AE4BC32AE53EF400AF7A88 = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +153,8 @@
 		E2AE4BE02AE53EF500AF7A88 /* EntainSportTests */ = {
 			isa = PBXGroup;
 			children = (
-				E2AE4BE12AE53EF500AF7A88 /* EntainSportTests.swift */,
+				E27189592AE8EBF7003A275A /* UI */,
+				E27189582AE8EBF0003A275A /* Data */,
 			);
 			path = EntainSportTests;
 			sourceTree = "<group>";
@@ -145,8 +162,6 @@
 		E2AE4BEA2AE53EF500AF7A88 /* EntainSportUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E2AE4BEB2AE53EF500AF7A88 /* EntainSportUITests.swift */,
-				E2AE4BED2AE53EF500AF7A88 /* EntainSportUITestsLaunchTests.swift */,
 			);
 			path = EntainSportUITests;
 			sourceTree = "<group>";
@@ -159,6 +174,7 @@
 				E2AE4BFD2AE5DD7A00AF7A88 /* APIRepository.swift */,
 				E2AE4C012AE5E12800AF7A88 /* RaceResponse.swift */,
 				E2AE4C0A2AE6234400AF7A88 /* SharedConvenienceFunctions.swift */,
+				E27189562AE8C4E9003A275A /* NetworkMonitor.swift */,
 				E2AE4C082AE618C100AF7A88 /* racing.json */,
 			);
 			path = Data;
@@ -246,6 +262,7 @@
 					};
 					E2AE4BDC2AE53EF500AF7A88 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 						TestTargetID = E2AE4BCB2AE53EF400AF7A88;
 					};
 					E2AE4BE62AE53EF500AF7A88 = {
@@ -290,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E271895F2AE8EF16003A275A /* racing-invalid-format.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27189572AE8C4E9003A275A /* NetworkMonitor.swift in Sources */,
 				E2AE4C0B2AE6234400AF7A88 /* SharedConvenienceFunctions.swift in Sources */,
 				E27189552AE7FEEF003A275A /* RacesViewModel.swift in Sources */,
 				E201BF482AE7CBF5005F6ABD /* RaceItemView.swift in Sources */,
@@ -324,7 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AE4BE22AE53EF500AF7A88 /* EntainSportTests.swift in Sources */,
+				E271895D2AE8EDA7003A275A /* RepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,8 +351,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AE4BEE2AE53EF500AF7A88 /* EntainSportUITestsLaunchTests.swift in Sources */,
-				E2AE4BEC2AE53EF500AF7A88 /* EntainSportUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +565,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Q7X663MJ7;
@@ -560,6 +578,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EntainSport.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EntainSport";
@@ -571,6 +590,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Q7X663MJ7;

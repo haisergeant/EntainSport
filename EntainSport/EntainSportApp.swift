@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct EntainSportApp: App {
+    @StateObject var networkMonitor = NetworkMonitor.shared
+    
     var body: some Scene {
         WindowGroup {
-            RacesView(viewModel: RacesViewModel(service: APIRepository()))
+            RacesView(viewModel: RacesViewModel(service: APIRepository(networkMonitor: networkMonitor)))
+                .environmentObject(networkMonitor)
         }
     }
 }
