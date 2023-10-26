@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+private struct ViewConstant {
+    static let bigSize = DynamicTypeSize.xLarge
+}
+
 struct RaceItemViewModel {
     let imageName: String
     let meetingName: String
@@ -32,7 +36,17 @@ struct RaceItemViewModel {
 }
 
 struct RaceItemView: View {
+    @Environment(\.dynamicTypeSize) var typeSize
     let viewModel: RaceItemViewModel
+    
+    private var horizontalPadding: Double {
+        typeSize > ViewConstant.bigSize ? 8 : 10
+    }
+    
+    private var verticalPadding: Double {
+        typeSize > ViewConstant.bigSize ? 8 : 12
+    }
+    
     var body: some View {
         HStack(spacing: 0) {
             // Image
@@ -47,6 +61,7 @@ struct RaceItemView: View {
                 Spacer()
             }
             .padding(.vertical, 12)
+            
             
             // Meeting name & race name
             VStack(alignment: .leading) {
@@ -64,28 +79,34 @@ struct RaceItemView: View {
             Divider()
                 .overlay(.neutralDark)
             
-            // race number
-            VStack {
-                Text(viewModel.raceNumber)
-                    .foregroundColor(.background)
-                Spacer()
-            }
-            .padding(.vertical, 12)
-            .padding(.horizontal, 10)
-            .frame(width: 60)
             
-            Divider()
-                .overlay(.neutralDark)
-            
-            // count down timer
-            VStack {
-                Text(viewModel.time)
-                    .foregroundColor(viewModel.timeColor)
-                Spacer()
+            Group {
+                // race number
+                VStack {
+                    Text(viewModel.raceNumber)
+                        .foregroundColor(.background)
+                    Spacer()
+                }
+                .padding(.vertical, verticalPadding)
+                .padding(.horizontal, horizontalPadding)
+                .frame(maxWidth: typeSize > ViewConstant.bigSize ? .infinity : 40)
+                
+                Divider()
+                    .overlay(.neutralDark)
+                
+                // count down timer
+                VStack {
+                    Text(viewModel.time)
+                        .font(.headline)
+                        .foregroundColor(viewModel.timeColor)
+                    Spacer()
+                }
+                .padding(.vertical, verticalPadding)
+                .padding(.horizontal, horizontalPadding)
+                .frame(maxWidth: typeSize > ViewConstant.bigSize ? .infinity : 80)
             }
-            .padding(.vertical, 12)
-            .padding(.horizontal, 12)
-            .frame(width: 84)
+            .adaptStack()
+            .frame(width: typeSize > ViewConstant.bigSize ? 100 : 120)
         }
         
         .padding(.leading, 20)
@@ -97,9 +118,34 @@ struct RaceItemView: View {
         RaceItemView(viewModel: RaceItemViewModel(imageName: RaceCategory.greyhound.imageName,
                                                   meetingName: "Townsville",
                                                   raceName: "Shelly Dennis",
-                                                  raceNumber: "No \n2",
+                                                  raceNumber: "2",
                                                   time: "5m 4s",
                                                   timeColor: .secondary2))
         .background(.main)
     }
+}
+
+extension Group where Content: View {
+    func adaptStack() -> some View {
+        modifier(AdaptableStack())
+    }
+}
+
+struct AdaptableStack: ViewModifier {
+    @Environment(\.dynamicTypeSize) var typeSize
+    
+    func body(content: Content) -> some View {
+        if typeSize > ViewConstant.bigSize {
+            VStack {
+                content
+            }
+        } else {
+            HStack {
+                content
+            }
+        }
+    }
+    
+    
+    
 }

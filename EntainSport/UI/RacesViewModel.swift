@@ -88,7 +88,7 @@ class RacesViewModel: ObservableObject {
                 viewModels.append(RaceItemViewModel(imageName: summary.category.imageName,
                                                     meetingName: summary.meetingName,
                                                     raceName: summary.raceName,
-                                                    raceNumber: "No \n\(summary.raceNumber)",
+                                                    raceNumber: "\(summary.raceNumber)",
                                                     time: tuple.timeValue,
                                                     timeColor: tuple.timeColor))
             } else {
