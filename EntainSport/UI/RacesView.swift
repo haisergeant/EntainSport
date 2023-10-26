@@ -58,7 +58,9 @@ struct RacesView: View {
                     }
                 }
                 .refreshable {
-                    viewModel.loadData()
+                    Task {
+                        await viewModel.loadData()
+                    }
                 }
                 .listStyle(.plain)
             }

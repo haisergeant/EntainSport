@@ -27,6 +27,8 @@
 		E2AE4C092AE618C100AF7A88 /* racing.json in Resources */ = {isa = PBXBuildFile; fileRef = E2AE4C082AE618C100AF7A88 /* racing.json */; };
 		E2AE4C0B2AE6234400AF7A88 /* SharedConvenienceFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE4C0A2AE6234400AF7A88 /* SharedConvenienceFunctions.swift */; };
 		E2AE4C0D2AE69C2800AF7A88 /* SelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE4C0C2AE69C2800AF7A88 /* SelectableButton.swift */; };
+		E2B038022AEA10A6009A6440 /* MockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B038012AEA10A6009A6440 /* MockRepository.swift */; };
+		E2B038042AEA12C5009A6440 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B038032AEA12C5009A6440 /* DataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		E2AE4C082AE618C100AF7A88 /* racing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = racing.json; sourceTree = "<group>"; };
 		E2AE4C0A2AE6234400AF7A88 /* SharedConvenienceFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConvenienceFunctions.swift; sourceTree = "<group>"; };
 		E2AE4C0C2AE69C2800AF7A88 /* SelectableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButton.swift; sourceTree = "<group>"; };
+		E2B038012AEA10A6009A6440 /* MockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepository.swift; sourceTree = "<group>"; };
+		E2B038032AEA12C5009A6440 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				E271899C2AE93977003A275A /* TimeHelperTests.swift */,
+				E2B038012AEA10A6009A6440 /* MockRepository.swift */,
 				E271899E2AE93F5F003A275A /* RacesViewModelTests.swift */,
 			);
 			path = UI;
@@ -160,6 +165,7 @@
 				E2AE4C012AE5E12800AF7A88 /* RaceResponse.swift */,
 				E2AE4C0A2AE6234400AF7A88 /* SharedConvenienceFunctions.swift */,
 				E27189562AE8C4E9003A275A /* NetworkMonitor.swift */,
+				E2B038032AEA12C5009A6440 /* DataHelper.swift */,
 				E2AE4C082AE618C100AF7A88 /* racing.json */,
 			);
 			path = Data;
@@ -290,6 +296,7 @@
 				E2AE4C022AE5E12800AF7A88 /* RaceResponse.swift in Sources */,
 				E2AE4C002AE5E11200AF7A88 /* EndPoint.swift in Sources */,
 				E2AE4C052AE616CA00AF7A88 /* RacesView.swift in Sources */,
+				E2B038042AEA12C5009A6440 /* DataHelper.swift in Sources */,
 				E2AE4BD02AE53EF400AF7A88 /* EntainSportApp.swift in Sources */,
 				E2AE4BFC2AE5DD6400AF7A88 /* Repository.swift in Sources */,
 			);
@@ -300,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E271899D2AE93977003A275A /* TimeHelperTests.swift in Sources */,
+				E2B038022AEA10A6009A6440 /* MockRepository.swift in Sources */,
 				E271899F2AE93F5F003A275A /* RacesViewModelTests.swift in Sources */,
 				E271895D2AE8EDA7003A275A /* RepositoryTests.swift in Sources */,
 			);

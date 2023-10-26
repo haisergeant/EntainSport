@@ -22,9 +22,11 @@ enum Result<T, Error> {
 class APIRepository: Repository, Service {
     func requestRace() async -> Result<RaceResponse, Error> {
         if isPreview {        
-            return await requestData(url: EndPoint.race.localUrl)
+            return await DataHelper.populateTemporaryDataForPreview()
         }
-        
         return await requestData(url: EndPoint.race.url)
     }
+    
+    
 }
+

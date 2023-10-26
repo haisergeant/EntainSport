@@ -14,7 +14,7 @@ final class RacesViewModelTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        viewModel = RacesViewModel(service: APIRepository(networkMonitor: NetworkMonitor.shared))
+        viewModel = RacesViewModel(service: MockRepository(networkMonitor: NetworkMonitor.shared))
     }
     
     func testSelectButton() {
@@ -49,7 +49,17 @@ final class RacesViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.selectAllTitle, "Select all")
     }
     
-    func testSummaryData() {
+    func testSummaryData() async {
+        
+        await viewModel.loadData()
+        
+        XCTAssertEqual(viewModel.summaries.count, 10)
+        XCTAssertTrue(viewModel.selectedGreyhound)
+        XCTAssertTrue(viewModel.selectedHarness)
+        XCTAssertTrue(viewModel.selectedHorse)
+        XCTAssertTrue(viewModel.selectedAll)
+        XCTAssertEqual(viewModel.selectAllTitle, "Deselect all")
+        XCTAssertEqual(viewModel.viewModels.count, 5)
         
     }
 }

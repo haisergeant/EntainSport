@@ -33,9 +33,9 @@ class RacesViewModel: ObservableObject {
     
     init(service: Service) {
         self.service = service
-        
-        loadData()
-        
+        Task {
+            await loadData()
+        }
         Publishers.CombineLatest4($selectedGreyhound, $selectedHarness, $selectedHorse, $currentTime)
             .sink { [weak self] greyhound, harness, horse, date in
                 self?.configureDataWithFilters(greyhound: greyhound,
@@ -105,7 +105,9 @@ class RacesViewModel: ObservableObject {
   
         // trigger load next batch of events
         if summaries.count < RacesViewConstant.maximumShowItems {
-            loadData()
+            Task {
+                await loadData()
+            }
         }
     }
     
@@ -123,23 +125,22 @@ class RacesViewModel: ObservableObject {
         }
     }
     
-    func loadData() {
-        Task {
-            let result = await service.requestRace()
-            await MainActor.run {
-                switch result {
-                case .success(let raceResponse):
-                    summaries = raceResponse.raceSummaries.sorted { $0.advertisedStart < $1.advertisedStart }
-                    
-                    configureDataWithFilters(greyhound: selectedGreyhound,
-                                             harness: selectedHarness,
-                                             horse: selectedHorse,
-                                             date: currentTime)
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
+    func loadData() async {
+        let result = await service.requestRace()
+        await MainActor.run {
+            switch result {
+            case .success(let raceResponse):
+                summaries = raceResponse.raceSummaries.sorted { $0.advertisedStart < $1.advertisedStart }
+                
+                configureDataWithFilters(greyhound: selectedGreyhound,
+                                         harness: selectedHarness,
+                                         horse: selectedHorse,
+                                         date: currentTime)
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
+        
     }
     
     func didTapSelectAll() {

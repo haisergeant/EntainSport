@@ -37,6 +37,8 @@ enum RaceCategory: String, Codable {
 }
 
 class RaceSummary: Codable {
+    
+    
     let raceID: String
     let raceName: String
     let raceNumber: Int
@@ -109,6 +111,28 @@ class RaceSummary: Codable {
         self.venueState = try container.decode(String.self, forKey: .venueState)
         self.venueCountry = try container.decode(String.self, forKey: .venueCountry)
     }
+    
+    init(raceID: String, raceName: String, raceNumber: Int,
+         meetingID: String, meetingName: String, category: RaceCategory,
+         advertisedStart: TimeInterval, distance: Double, distanceType: String,
+         raceComment: String, venueID: String, venueName: String,
+         venueState: String, venueCountry: String) {
+        
+        self.raceID = raceID
+        self.raceName = raceName
+        self.raceNumber = raceNumber
+        self.meetingID = meetingID
+        self.meetingName = meetingName
+        self.category = category
+        self.advertisedStart = advertisedStart
+        self.distance = distance
+        self.distanceType = distanceType
+        self.raceComment = raceComment
+        self.venueID = venueID
+        self.venueName = venueName
+        self.venueState = venueState
+        self.venueCountry = venueCountry
+    }
 }
 
 class RaceResponse: Codable {
@@ -122,6 +146,10 @@ class RaceResponse: Codable {
     enum DataCodingKeys: String, CodingKey {
         case nextToGoIds = "next_to_go_ids"
         case raceSummaries = "race_summaries"
+    }
+    
+    init(raceSummaries: [RaceSummary]) {
+        self.raceSummaries = raceSummaries
     }
     
     required init(from decoder: Decoder) throws {
