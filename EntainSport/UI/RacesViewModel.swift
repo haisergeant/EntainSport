@@ -36,6 +36,7 @@ class RacesViewModel: ObservableObject {
         Task {
             await loadData()
         }
+        
         Publishers.CombineLatest4($selectedGreyhound, $selectedHarness, $selectedHorse, $currentTime)
             .sink { [weak self] greyhound, harness, horse, date in
                 self?.configureDataWithFilters(greyhound: greyhound,
@@ -87,9 +88,13 @@ class RacesViewModel: ObservableObject {
                 
                 viewModels.append(RaceItemViewModel(imageName: summary.category.imageName,
                                                     meetingName: summary.meetingName,
+                                                    accessibilityMeetingName: summary.meetingName,
                                                     raceName: summary.raceName,
+                                                    accessibilityRaceName: summary.raceName,
                                                     raceNumber: "\(summary.raceNumber)",
-                                                    time: tuple.timeValue,
+                                                    accessibilityRaceNumber: "Race number \(summary.raceNumber)",
+                                                    time: tuple.timeDisplayValue,
+                                                    accessibilityTime: tuple.timeAccessibilityValue,
                                                     timeColor: tuple.timeColor))
             } else {
                 expiredSummaries.append(summary)
@@ -126,6 +131,7 @@ class RacesViewModel: ObservableObject {
     }
     
     func loadData() async {
+        
         let result = await service.requestRace()
         await MainActor.run {
             switch result {
@@ -157,7 +163,7 @@ class RacesViewModel: ObservableObject {
 }
 
 class TimeHelper {
-    static func formatTimeToValueAndColor(current: Date, next: Date) -> (timeValue: String, timeColor: Color)? {
+    static func formatTimeToValueAndColor(current: Date, next: Date) -> (timeDisplayValue: String, timeAccessibilityValue: String, timeColor: Color)? {
         let difference = Calendar.current.dateComponents([.minute, .second],
                                                          from: current,
                                                          to: next)
@@ -166,15 +172,15 @@ class TimeHelper {
         let seconds = difference.second ?? 0
         
         if minutes >= 5 {
-            return ("\(minutes)m", .neutralLight)
-        } else if seconds <= 0, seconds >= -59, minutes == 0 {
-            return ("\(seconds)s", .error)
+            return ("\(minutes)m", "\(minutes) minutes", .neutralLight)
+        } else if seconds < 0, seconds >= -59, minutes == 0 {
+            return ("\(seconds)s", "Passed \(abs(seconds)) seconds", .error)
         } else if minutes < 0 {
             return nil
         } else if minutes == 0, seconds >= 0 {
-            return ("\(seconds)s", .secondary2)
+            return ("\(seconds)s", "\(seconds) seconds", .secondary2)
         } else {
-            return ("\(minutes)m \(seconds)s", .secondary2)
+            return ("\(minutes)m \(seconds)s", "\(minutes) minutes \(seconds) seconds", .secondary2)
         }
     }
 }

@@ -16,7 +16,7 @@ final class TimeHelperTests: XCTestCase {
         let next = Calendar.current.date(byAdding: .minute, value: 6, to: current)!
         
         let tuple = TimeHelper.formatTimeToValueAndColor(current: current, next: next)
-        XCTAssertEqual(tuple?.timeValue, "6m")
+        XCTAssertEqual(tuple?.timeDisplayValue, "6m")
         XCTAssertEqual(tuple?.timeColor, .neutralLight)
     }
     
@@ -26,7 +26,7 @@ final class TimeHelperTests: XCTestCase {
         next = Calendar.current.date(byAdding: .second, value: 6, to: next)!
         
         let tuple = TimeHelper.formatTimeToValueAndColor(current: current, next: next)
-        XCTAssertEqual(tuple?.timeValue, "4m 6s")
+        XCTAssertEqual(tuple?.timeDisplayValue, "4m 6s")
         XCTAssertEqual(tuple?.timeColor, .secondary2)
     }
     
@@ -35,7 +35,7 @@ final class TimeHelperTests: XCTestCase {
         let next = Calendar.current.date(byAdding: .second, value: 48, to: current)!
         
         let tuple = TimeHelper.formatTimeToValueAndColor(current: current, next: next)
-        XCTAssertEqual(tuple?.timeValue, "48s")
+        XCTAssertEqual(tuple?.timeDisplayValue, "48s")
         XCTAssertEqual(tuple?.timeColor, .secondary2)
     }
     
@@ -44,7 +44,7 @@ final class TimeHelperTests: XCTestCase {
         let next = Calendar.current.date(byAdding: .second, value: -48, to: current)!
         
         let tuple = TimeHelper.formatTimeToValueAndColor(current: current, next: next)
-        XCTAssertEqual(tuple?.timeValue, "-48s")
+        XCTAssertEqual(tuple?.timeDisplayValue, "-48s")
         XCTAssertEqual(tuple?.timeColor, .error)
     }
     

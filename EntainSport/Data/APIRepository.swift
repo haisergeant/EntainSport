@@ -24,6 +24,7 @@ class APIRepository: Repository, Service {
         if isPreview {        
             return await DataHelper.populateTemporaryDataForPreview()
         }
+        
         return await requestData(url: EndPoint.race.url)
     }
     

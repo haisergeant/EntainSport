@@ -38,10 +38,13 @@ struct SelectableButton: View {
                 Text(viewModel.title)
                     .foregroundColor(viewModel.selectedState ? .secondary2 : .neutralLight)
                     .font(.footnote)
+                    .accessibilityHidden(true)
             }
             .padding(.horizontal, 10)
             .padding(.vertical, 10)
         })
+        .accessibilityIdentifier("Selectable.Button")
+        .accessibilityLabel("\(viewModel.title) button - \(viewModel.selectedState ? "selected" : "unselected")")
     }
 }
 

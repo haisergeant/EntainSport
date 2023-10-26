@@ -14,25 +14,15 @@ private struct ViewConstant {
 struct RaceItemViewModel {
     let imageName: String
     let meetingName: String
+    let accessibilityMeetingName: String
     let raceName: String
+    let accessibilityRaceName: String
     let raceNumber: String
+    let accessibilityRaceNumber: String
     let time: String
+    let accessibilityTime: String
     let timeColor: Color
     
-    init(imageName: String, 
-         meetingName: String,
-         raceName: String,
-         raceNumber: String,
-         time: String,
-         timeColor: Color) {
-        
-        self.imageName = imageName
-        self.meetingName = meetingName
-        self.raceName = raceName
-        self.raceNumber = raceNumber
-        self.time = time
-        self.timeColor = timeColor
-    }
 }
 
 struct RaceItemView: View {
@@ -40,11 +30,15 @@ struct RaceItemView: View {
     let viewModel: RaceItemViewModel
     
     private var horizontalPadding: Double {
-        typeSize > ViewConstant.bigSize ? 8 : 10
+        isBigTypeSize ? 12 : 8
     }
     
     private var verticalPadding: Double {
-        typeSize > ViewConstant.bigSize ? 8 : 12
+        isBigTypeSize ? 8 : 12
+    }
+    
+    private var isBigTypeSize: Bool {
+        typeSize > ViewConstant.bigSize
     }
     
     var body: some View {
@@ -67,8 +61,12 @@ struct RaceItemView: View {
             VStack(alignment: .leading) {
                 Text(viewModel.meetingName)
                     .foregroundColor(.background)
+                    .accessibilityIdentifier("Race.Meeting.Name")
+                    .accessibilityLabel(viewModel.accessibilityMeetingName)
                 Text(viewModel.raceName)
                     .foregroundColor(.neutralLight)
+                    .accessibilityIdentifier("Race.Name")
+                    .accessibilityLabel(viewModel.accessibilityRaceName)
                 Spacer()
             }
             .padding(.vertical, 12)
@@ -85,11 +83,13 @@ struct RaceItemView: View {
                 VStack {
                     Text(viewModel.raceNumber)
                         .foregroundColor(.background)
+                        .accessibilityIdentifier("Race.Number")
+                        .accessibilityLabel(viewModel.accessibilityRaceNumber)
                     Spacer()
                 }
                 .padding(.vertical, verticalPadding)
                 .padding(.horizontal, horizontalPadding)
-                .frame(maxWidth: typeSize > ViewConstant.bigSize ? .infinity : 40)
+                .frame(maxWidth: isBigTypeSize ? .infinity : 34)
                 
                 Divider()
                     .overlay(.neutralDark)
@@ -99,14 +99,16 @@ struct RaceItemView: View {
                     Text(viewModel.time)
                         .font(.headline)
                         .foregroundColor(viewModel.timeColor)
+                        .accessibilityIdentifier("Race.Number")
+                        .accessibilityLabel(viewModel.accessibilityTime)
                     Spacer()
                 }
                 .padding(.vertical, verticalPadding)
                 .padding(.horizontal, horizontalPadding)
-                .frame(maxWidth: typeSize > ViewConstant.bigSize ? .infinity : 80)
+                .frame(maxWidth: isBigTypeSize ? .infinity : 86)
             }
             .adaptStack()
-            .frame(width: typeSize > ViewConstant.bigSize ? 100 : 120)
+            .frame(width: isBigTypeSize ? 100 : 120)
         }
         
         .padding(.leading, 20)
@@ -117,9 +119,13 @@ struct RaceItemView: View {
     VStack {
         RaceItemView(viewModel: RaceItemViewModel(imageName: RaceCategory.greyhound.imageName,
                                                   meetingName: "Townsville",
+                                                  accessibilityMeetingName: "Townsville",
                                                   raceName: "Shelly Dennis",
+                                                  accessibilityRaceName: "Shelly Dennis",
                                                   raceNumber: "2",
+                                                  accessibilityRaceNumber: "Race number 2",
                                                   time: "5m 4s",
+                                                  accessibilityTime: "5 minutes 4 seconds",
                                                   timeColor: .secondary2))
         .background(.main)
     }

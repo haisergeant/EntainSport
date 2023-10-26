@@ -57,6 +57,7 @@ class Repository {
             let formattedData = try JSONDecoder().decode(T.self, from: data)
             return .success(formattedData)
         } catch {
+            print(error)
             return .failure(NetworkError.invalidFormat)
         }
     }

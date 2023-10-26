@@ -52,7 +52,6 @@ final class RacesViewModelTests: XCTestCase {
     func testSummaryData() async {
         
         await viewModel.loadData()
-        
         XCTAssertEqual(viewModel.summaries.count, 10)
         XCTAssertTrue(viewModel.selectedGreyhound)
         XCTAssertTrue(viewModel.selectedHarness)

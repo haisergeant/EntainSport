@@ -47,9 +47,9 @@ class RaceSummary: Codable {
     let category: RaceCategory
     let advertisedStart: TimeInterval
     
-    let distance: Double
-    let distanceType: String
-    let raceComment: String
+    let distance: Double?
+    let distanceType: String?
+    let raceComment: String?
     
     let venueID: String
     let venueName: String
@@ -100,11 +100,11 @@ class RaceSummary: Codable {
         self.advertisedStart = try advertiseContainer.decode(TimeInterval.self, forKey: .seconds)
         
         let formContainer = try container.nestedContainer(keyedBy: RaceFormCodingKeys.self, forKey: .raceForm)
-        self.distance = try formContainer.decode(Double.self, forKey: .distance)
-        self.raceComment = try formContainer.decode(String.self, forKey: .raceComment)
+        self.distance = try? formContainer.decode(Double.self, forKey: .distance)
+        self.raceComment = try? formContainer.decode(String.self, forKey: .raceComment)
         
         let distanceContainer = try formContainer.nestedContainer(keyedBy: ObjectConditionCodingKeys.self, forKey: .distanceType)
-        self.distanceType = try distanceContainer.decode(String.self, forKey: .name)
+        self.distanceType = try? distanceContainer.decode(String.self, forKey: .name)
         
         self.venueID = try container.decode(String.self, forKey: .venueID)
         self.venueName = try container.decode(String.self, forKey: .venueName)
