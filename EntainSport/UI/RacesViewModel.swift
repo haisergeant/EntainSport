@@ -28,6 +28,10 @@ class RacesViewModel: ObservableObject {
     @Published var selectAllImage = Image(systemName: "checkmark.circle.fill")
     @Published var selectAllTitle = "Deselect all"
     
+    // Handle error
+    @Published var showErrorPopup = false
+    @Published var errorMessage = ""
+    
     private var cancellables: Set<AnyCancellable> = []
     @Published var currentTime: Date = Date()
     
@@ -78,6 +82,7 @@ class RacesViewModel: ObservableObject {
                 item.category == .harness && harness ||
                 item.category == .horse && horse
             }
+            selectedSummaries = Array(selectedSummaries.prefix(RacesViewConstant.maximumShowItems))
         }
         
         viewModels = []
@@ -132,21 +137,30 @@ class RacesViewModel: ObservableObject {
     
     func loadData() async {
         
-        let result = await service.requestRace()
+        let result = await service.requestRace(size: 20)
         await MainActor.run {
             switch result {
             case .success(let raceResponse):
-                summaries = raceResponse.raceSummaries.sorted { $0.advertisedStart < $1.advertisedStart }
+                var responseSummaries = raceResponse.raceSummaries
+                let currentSummaryIDs = summaries.map { $0.raceID }
+                responseSummaries = responseSummaries.filter {
+                    !currentSummaryIDs.contains($0.raceID)
+                }
+                
+                summaries.append(contentsOf: responseSummaries)
+                summaries = summaries.sorted { $0.advertisedStart < $1.advertisedStart }
                 
                 configureDataWithFilters(greyhound: selectedGreyhound,
                                          harness: selectedHarness,
                                          horse: selectedHorse,
                                          date: currentTime)
             case .failure(let error):
-                print(error.localizedDescription)
+                errorMessage = (error as? NetworkError)?.errorMessage ?? ""
+                if !errorMessage.isEmpty {
+                    showErrorPopup = true
+                }
             }
-        }
-        
+        }        
     }
     
     func didTapSelectAll() {

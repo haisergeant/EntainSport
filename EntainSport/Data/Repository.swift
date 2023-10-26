@@ -9,7 +9,7 @@ import Foundation
 
 // Protocol to define the service to be called
 protocol Service {
-    func requestRace() async -> Result<RaceResponse, Error>
+    func requestRace(size: Int) async -> Result<RaceResponse, Error>
 }
 
 class Repository {

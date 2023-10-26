@@ -67,6 +67,9 @@
 		E2AE4C0C2AE69C2800AF7A88 /* SelectableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButton.swift; sourceTree = "<group>"; };
 		E2B038012AEA10A6009A6440 /* MockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepository.swift; sourceTree = "<group>"; };
 		E2B038032AEA12C5009A6440 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
+		E2B038052AEA96BE009A6440 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E2B038072AEA9E5E009A6440 /* pic-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic-1.png"; sourceTree = "<group>"; };
+		E2B038082AEA9E5E009A6440 /* pic-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic-2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 		E2AE4BC32AE53EF400AF7A88 = {
 			isa = PBXGroup;
 			children = (
+				E2B038052AEA96BE009A6440 /* README.md */,
+				E2B038062AEA9E28009A6440 /* screenshot */,
 				E2AE4BCE2AE53EF400AF7A88 /* EntainSport */,
 				E2AE4BE02AE53EF500AF7A88 /* EntainSportTests */,
 				E2AE4BCD2AE53EF400AF7A88 /* Products */,
@@ -180,6 +185,15 @@
 				E201BF472AE7CBF5005F6ABD /* RaceItemView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		E2B038062AEA9E28009A6440 /* screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				E2B038072AEA9E5E009A6440 /* pic-1.png */,
+				E2B038082AEA9E5E009A6440 /* pic-2.png */,
+			);
+			path = screenshot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

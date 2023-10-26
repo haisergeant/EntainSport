@@ -8,8 +8,8 @@
 import Foundation
 
 class DataHelper {
-    static func populateTemporaryDataForPreview() async -> Result<RaceResponse, Error> {
-        let summaries = (1...10).compactMap { _ in RaceSummary(raceID: randomRaceID, raceName: randomRaceName,
+    static func populateTemporaryDataForPreview(size: Int = 20) async -> Result<RaceResponse, Error> {
+        let summaries = (1...size).compactMap { _ in RaceSummary(raceID: randomRaceID, raceName: randomRaceName,
                                                                raceNumber: randomRaceNumber, meetingID: randomMeetingID,
                                                                meetingName: randomMeetingName, category: randomCategory,
                                                                advertisedStart: randomSartTime, distance: randomDistance,

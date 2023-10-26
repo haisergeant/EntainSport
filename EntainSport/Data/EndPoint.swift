@@ -9,13 +9,13 @@ import Foundation
 
 // EndPoint
 enum EndPoint {
-    case race
+    case race(size: Int)
     
     /// API Endpoint
     var url: URL {
         switch self {
-        case .race:
-            return URL(string: "https://api.neds.com.au/rest/v1/racing/?method=nextraces&count=10")!
+        case .race(let size):
+            return URL(string: "https://api.neds.com.au/rest/v1/racing/?method=nextraces&count=\(size)")!
         }
     }
     
@@ -23,7 +23,7 @@ enum EndPoint {
     var localUrl: URL {
         switch self {
         case .race:
-            fileUrl("racing.json")!
+            return fileUrl("racing.json")!
         }
     }
     

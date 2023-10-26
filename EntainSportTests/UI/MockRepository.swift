@@ -10,7 +10,7 @@ import Foundation
 
 class MockRepository: Repository, Service {
     
-    func requestRace() async -> Result<RaceResponse, Error> {
-        return await DataHelper.populateTemporaryDataForPreview()
+    func requestRace(size: Int = 20) async -> Result<RaceResponse, Error> {
+        return await DataHelper.populateTemporaryDataForPreview(size: size)
     }
 }

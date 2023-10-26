@@ -29,14 +29,6 @@ struct RaceItemView: View {
     @Environment(\.dynamicTypeSize) var typeSize
     let viewModel: RaceItemViewModel
     
-    private var horizontalPadding: Double {
-        isBigTypeSize ? 12 : 8
-    }
-    
-    private var verticalPadding: Double {
-        isBigTypeSize ? 8 : 12
-    }
-    
     private var isBigTypeSize: Bool {
         typeSize > ViewConstant.bigSize
     }
@@ -87,9 +79,9 @@ struct RaceItemView: View {
                         .accessibilityLabel(viewModel.accessibilityRaceNumber)
                     Spacer()
                 }
-                .padding(.vertical, verticalPadding)
-                .padding(.horizontal, horizontalPadding)
-                .frame(maxWidth: isBigTypeSize ? .infinity : 34)
+                .padding(.vertical, 12)
+                .padding(.horizontal, 6)
+                .frame(maxWidth: isBigTypeSize ? .infinity : 36)
                 
                 Divider()
                     .overlay(.neutralDark)
@@ -103,12 +95,12 @@ struct RaceItemView: View {
                         .accessibilityLabel(viewModel.accessibilityTime)
                     Spacer()
                 }
-                .padding(.vertical, verticalPadding)
-                .padding(.horizontal, horizontalPadding)
-                .frame(maxWidth: isBigTypeSize ? .infinity : 86)
+                .padding(.vertical, 12)
+                .padding(.horizontal, 4)
+                .frame(maxWidth: isBigTypeSize ? .infinity : 94)
             }
             .adaptStack()
-            .frame(width: isBigTypeSize ? 100 : 120)
+            .frame(width: isBigTypeSize ? 100 : 130)
         }
         
         .padding(.leading, 20)
